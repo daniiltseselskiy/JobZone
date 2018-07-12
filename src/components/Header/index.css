@@ -1,0 +1,62 @@
+.header-container {
+    padding: 1% 0;
+}
+.header-container nav {
+    width: 73%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0;
+    background-color: white !important;
+}
+.header-container .logo-image {
+    width: 80%;
+    height: 100%;
+}
+.header-container .nav-item {
+    
+}
+.header-container .nav-item .nav-text {
+    /* Style for "Why Jobzon" */
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #252525;
+    font-family: "SFUI Display - Regular";
+    font-size: 20px;
+    font-weight: 400;
+}
+.header-container .nav-item .button-gradient {
+    /* Style for "bound" */
+    color: white;
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-image: linear-gradient(38deg, #6d31b1 0%, #00b2c3 100%); */
+    background-image: url("../../assets/images/header/button-background.png");
+    background-size: 95%;
+}
+
+@media screen and (max-width: 1364px) {
+    .header-container .nav-item .nav-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 958px) {
+    .header-container .nav-item .nav-text {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+        font-size: 18px;
+    }
+
+   
+}
+@media screen and (max-width: 873px) {
+    .header-container .nav-item .nav-text {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem;
+        font-size: 15px;
+    }
+
+   
+}

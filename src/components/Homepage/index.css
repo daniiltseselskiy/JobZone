@@ -1,0 +1,60 @@
+.home-page-container {
+    padding: 4% 0 4% 0;
+}
+.home-page-container .row .col-lg-6 .left-text {
+    padding-left: 27%;
+}
+.home-page-container .row .col-lg-6 {
+    align-self: center;
+}
+.home-page-container .row .col-lg-6 .left-text  h1 {
+    color: #8951d7;
+    font-family: "SFUI Display - Regular";
+    font-size: 102px;
+    font-weight: 400;
+}
+.home-page-container .row .col-lg-6 .left-text  p {
+    color: #252525;
+    font-family: "SFUI Display - Light";
+    font-size: 40px;
+    font-weight: 300;
+    /* Text style for "Digital th" */
+    letter-spacing: 0.53px;
+}
+.home-page-container .row .col-lg-6.right-image {
+    padding-left: 0;
+    padding-right: 2%;
+}
+.home-page-container .row .col-lg-6.right-image img {
+    width: 100%;
+
+}
+
+@media screen and (max-width: 1460px) {
+    .home-page-container .row .col-lg-6 .left-text  h1 {
+        font-size: 78px;
+    }
+    .home-page-container .row .col-lg-6 .left-text  p {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 1200px) {
+    .home-page-container .row .col-lg-6 .left-text  h1 {
+        font-size: 64px;
+    }
+    .home-page-container .row .col-lg-6 .left-text  p {
+        font-size: 24px;
+    }
+}
+@media screen and (max-width: 992px) {
+    .home-page-container .row .col-lg-6 .left-text  h1 {
+        font-size: 102px;
+    }
+    .home-page-container .row .col-lg-6 .left-text  p {
+        font-size: 40px;
+    }
+    .home-page-container .row .col-lg-6 .left-text {
+        padding-left: 14%;
+        padding-right: 14%;
+    }
+}

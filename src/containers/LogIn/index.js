@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Homepage from '../../components/Homepage';
-import { 
- 
- } from '../../actions/homepage';
 
- 
-
-class HomeContainer extends Component {
+class LogInContainer extends Component {
     constructor (props) {
         super(props)
 
@@ -15,10 +9,11 @@ class HomeContainer extends Component {
            
         }
     }
+    
     render () {
         return (
-            <div className="home-page">
-                <Homepage />
+            <div className="log-in-page">
+                This is Login page.
             </div>
         )
     }
@@ -40,4 +35,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(HomeContainer);
+)(LogInContainer);

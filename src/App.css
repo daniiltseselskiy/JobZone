@@ -1,0 +1,9 @@
+/* Login page */
+.header.log-in {
+    display: none;
+}
+
+/* SignUp page */
+.header.sign-up {
+    display: none;
+}

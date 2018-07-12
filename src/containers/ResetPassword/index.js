@@ -1,13 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import Homepage from '../../components/Homepage';
-import { 
- 
- } from '../../actions/homepage';
 
- 
-
-class HomeContainer extends Component {
+class ResetPasswordContainer extends Component {
     constructor (props) {
         super(props)
 
@@ -15,10 +9,11 @@ class HomeContainer extends Component {
            
         }
     }
+    
     render () {
         return (
-            <div className="home-page">
-                <Homepage />
+            <div className="reset-password-page">
+                This is ResetPassword page.
             </div>
         )
     }
@@ -40,4 +35,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(HomeContainer);
+)(ResetPasswordContainer);

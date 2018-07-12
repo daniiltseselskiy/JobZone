@@ -1,0 +1,64 @@
+.footer-container {
+    margin: 0;
+    padding: 1% 0 10% 0;
+    color: #ffffff;
+    font-family: "SFUI Display - Regular";
+    font-size: 16px;
+    font-weight: 400;
+    background-color: #252525;
+}
+.footer-container .footer-body {
+    width: 62%;
+    margin: 1% auto;
+    padding: 0;
+}
+.footer-container .footer-body .logo-text {
+    padding: 0;
+}
+.footer-container .footer-body .logo-text a {
+    display: flex;
+    align-items: baseline;
+    color: #ffffff;
+    font-size: 700px;
+    text-decoration: none;
+}
+.footer-container .footer-body .logo-text .job-text {
+    font-family: "SFUI Text - Bold";
+    font-weight: 700;
+}
+.footer-container .footer-body .logo-text .zone-text {
+    font-family: "SFUI Text - Regular";
+    font-weight: 400;
+}
+/* Follow Items  */
+.footer-container .footer-body .row .col-lg-4 .follow-items {
+   display: flex;
+   margin-top: 10%;
+}
+.footer-container .footer-body .row .col-lg-4 .follow-items img {
+    padding-right: 20%;
+}
+.footer-container .footer-body .row .col-lg-4.footer-text-col  {
+    padding-top: 6%;
+}
+/* Footer Text Box (About , Language, Terms of Service Privacy Policy) */
+.footer-container .footer-body .row .col-lg-4 .footer-text {
+    display: flex;
+ }
+ .footer-container .footer-body .row .col-lg-4 .footer-text p {
+     width: 50%;
+ }
+ /* Phone padding top 20  */
+ .footer-container .footer-body .row .col-12 {
+     padding-top: 20px;
+ }
+ .footer-container .footer-body .row .col-12 .follow-items {
+     margin-top: 1%;
+ }
+ /* Col md ----  padidng left */
+ .footer-container .footer-body .row .col-md-12 {
+     padding-left: 0;
+ }
+ .footer-container .footer-body .row .col-md-12 p {
+     padding-left: 1rem;
+ }
