@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import LogIn from '../../components/LogIn'
 
 class LogInContainer extends Component {
     constructor (props) {
@@ -13,7 +14,7 @@ class LogInContainer extends Component {
     render () {
         return (
             <div className="log-in-page">
-                This is Login page.
+               <LogIn />
             </div>
         )
     }

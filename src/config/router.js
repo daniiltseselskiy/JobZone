@@ -9,7 +9,7 @@ import Homepage from '../containers/Homepage';
 import ResetPassword from '../containers/ResetPassword';
 import SignUp from '../containers/SignUp';
 import LogIn from '../containers/LogIn';
-
+import ForgotPassword from '../containers/ForgotPassword'
 class RouterComponent extends Component {
     render () {
         return (
@@ -17,6 +17,7 @@ class RouterComponent extends Component {
                 <Headers />
                 <Switch>
                     <Route path="/resetpassword" component={ResetPassword} />
+                    <Route path="/forgotpassword" component={ForgotPassword} />
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/log-in" component={LogIn} />
                     <Route path="/" component={Homepage} />

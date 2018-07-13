@@ -1,0 +1,41 @@
+.reset-password-container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+.reset-password-container h1 {
+    margin-top: 72px;
+    color: #252525;
+    font-family: "SFUI Display - Regular";
+    font-size: 28px;
+    font-weight: 400;
+}
+.reset-password-container input {
+    width: 50%;
+    margin: 80px auto 0 auto;
+    padding: 2% 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.reset-password-container input::placeholder {
+    color: #bcbcbc;
+    font-family: "SFUI Display - Regular";
+    font-size: 14px;
+    font-weight: 400;
+    /* Text style for "Phone or E" */
+    letter-spacing: -0.16px;
+}
+
+.reset-password-container input:focus {
+    box-shadow: none;
+}
+.reset-password-container .bottom-container {
+    margin-top: 230px;
+}
+.reset-password-container .bottom-container img:nth-child(2) {
+    margin-top: 7px;
+    margin-left: 45px;
+}

@@ -1,0 +1,79 @@
+.login-container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+.login-container h1 {
+    margin-top: 72px;
+    color: #252525;
+    font-family: "SFUI Display - Regular";
+    font-size: 28px;
+    font-weight: 400;
+}
+.login-container input {
+    width: 50%;
+    margin: 80px auto 0 auto;
+    padding: 2% 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+
+.login-container input::placeholder {
+    color: #bcbcbc;
+    font-family: "SFUI Display - Regular";
+    font-size: 14px;
+    font-weight: 400;
+    /* Text style for "Phone or E" */
+    letter-spacing: -0.16px;
+}
+
+.login-container input:focus {
+    box-shadow: none;
+}
+.login-container a {
+    position: absolute;
+    left: 26%;
+    margin-top: 14px;
+    color: #252525;
+    font-family: "SFUI Display - Regular";
+    font-size: 12px;
+    font-weight: 400;
+    /* Text style for "Forgot Pas" */
+    letter-spacing: -0.14px;
+}
+.login-container img {
+    margin-top: 200px;
+}
+.login-container img:hover {
+    cursor: pointer;
+}
+.login-container .bottom-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.login-container .bottom-container h2 {
+    color: #888888;
+    margin-bottom: 0;
+    margin-top: 3px;
+    font-size: 18px;
+    /* Text style for "Need an ac" */
+    font-family: "SFUI Display - Regular";
+    font-weight: 400;
+    letter-spacing: -0.21px;
+}
+.login-container .bottom-container button {
+    color: #8951d7;
+    font-size: 18px;
+    font-family: "SFUI Display - Medium";
+    font-weight: 700;
+    letter-spacing: -0.21px;
+    border-style: none;
+    background: transparent;
+}
+.login-container .bottom-container button:hover {
+    cursor: pointer;
+}

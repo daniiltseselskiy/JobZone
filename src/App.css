@@ -2,8 +2,27 @@
 .header.log-in {
     display: none;
 }
-
+.footer.log-in {
+    display: none;
+}
 /* SignUp page */
 .header.sign-up {
+    display: none;
+}
+.footer.sign-up {
+    display: none;
+}
+/* Reset Password Page  */
+.header.resetpassword {
+    display: none;
+}
+.footer.resetpassword {
+    display: none;
+}
+/* Forgot Password Page  */
+.header.forgotpassword {
+    display: none;
+}
+.footer.forgotpassword {
     display: none;
 }

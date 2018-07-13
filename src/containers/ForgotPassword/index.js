@@ -1,8 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
-import ResetPassword from '../../components/ResetPassword'
-
-class ResetPasswordContainer extends Component {
+import ForgotPassword from '../../components/ForgotPassword'
+class ForgotPasswordContainer extends Component {
     constructor (props) {
         super(props)
 
@@ -13,8 +12,8 @@ class ResetPasswordContainer extends Component {
     
     render () {
         return (
-            <div className="reset-password-page">
-                <ResetPassword />
+            <div className="forgot-password-page">
+                <ForgotPassword />
             </div>
         )
     }
@@ -36,4 +35,4 @@ const mapDispatchToProps = (dispatch, ownProps) => {
 export default connect(
     mapStateToProps,
     mapDispatchToProps
-)(ResetPasswordContainer);
+)(ForgotPasswordContainer);

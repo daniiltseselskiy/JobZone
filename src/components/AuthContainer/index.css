@@ -1,0 +1,21 @@
+.auth-container {
+    max-width: 100%;
+    padding: 0;
+}
+.auth-container .row .col-lg-6.right-auth-image {
+    height: 100vh;
+    /* background-size: 105vh auto; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0;
+    background-image: url("../../assets/images/authcontainer/auth-image.png");
+}
+.auth-container .row .col-lg-6.left-logo-image {
+    height: 100vh;
+    text-align: center;
+    padding-top: 165px;
+}
+.auth-container .row .col-lg-6.left-logo-image img {
+    
+}
