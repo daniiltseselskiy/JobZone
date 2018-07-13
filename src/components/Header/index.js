@@ -46,7 +46,7 @@ class Header extends Component {
                             <NavItem >
                                 <NavLink className="nav-text" href="#">Sign In</NavLink>
                             </NavItem>
-                            <NavItem >
+                            <NavItem className="background-gradient">
                                 <NavLink className="nav-text button-gradient" href="#">Hire Workers</NavLink>
                             </NavItem>
                         </Nav>

@@ -1,19 +1,25 @@
 .home-page-container {
     padding: 4% 0 4% 0;
+    background-color: #f7f8fb;
+    max-width: 100%;
 }
-.home-page-container .row .col-lg-6 .left-text {
+.row {
+    margin: 0;
+}
+/* HomePanel */
+.home-page-container .row.home-panel .col-lg-6 .left-text {
     padding-left: 27%;
 }
-.home-page-container .row .col-lg-6 {
+.home-page-container .row.home-panel .col-lg-6 {
     align-self: center;
 }
-.home-page-container .row .col-lg-6 .left-text  h1 {
+.home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
     color: #8951d7;
     font-family: "SFUI Display - Regular";
     font-size: 102px;
     font-weight: 400;
 }
-.home-page-container .row .col-lg-6 .left-text  p {
+.home-page-container .row.home-panel .col-lg-6 .left-text  p {
     color: #252525;
     font-family: "SFUI Display - Light";
     font-size: 40px;
@@ -21,40 +27,164 @@
     /* Text style for "Digital th" */
     letter-spacing: 0.53px;
 }
-.home-page-container .row .col-lg-6.right-image {
+.home-page-container .row.home-panel .col-lg-6.right-image {
     padding-left: 0;
     padding-right: 2%;
 }
-.home-page-container .row .col-lg-6.right-image img {
+.home-page-container .row.home-panel .col-lg-6 img, .row.home-job-panel .col-lg-6 img {
     width: 100%;
-
+}
+.home-page-container .row.home-job-panel {
+    padding-top: 13%;
+    padding-bottom: 11%;
+}
+.home-page-container .row.home-job-panel .col-lg-6.left-job-image {
+    position: relative;
+    padding-left: 13%;
+    padding-right: 3%;
+}
+.home-page-container .row.home-job-panel .col-lg-6.right-business-image {
+    position: relative;
+    padding-left: 3%;
+    padding-right: 13%;
+}
+.home-page-container .row.home-job-panel .col-lg-6.left-job-image img:nth-child(2) {
+    position: absolute;
+    width: 31%;
+    bottom: 11%;
+    left: 43%;
+   
+}
+.home-page-container .row.home-job-panel .col-lg-6.right-business-image img:nth-child(2) {
+    position: absolute;
+    width: 31%;
+    bottom: 11%;
+    right: 45%;
+}
+.home-page-container .row.home-job-panel .col-lg-6.right-business-image img:nth-child(3) {
+    position: absolute;
+    bottom: -8%;
+    right: 21%;
+    width: 20%;
+}
+/* Why Job Zone */
+.home-page-container .why-jobzone-panel {
+    width: 100%;
+    padding: 7% 13% 11% 13%;
+    background-color: #ffffff;
+}
+.home-page-container .why-jobzone-panel h1, .how-it-works-panel h1 {
+    text-align: center;
+    color: #252525;
+    font-family: "SFUI Display - Regular";
+    font-size: 70px;
+    font-weight: 400;
 }
 
+.home-page-container .why-jobzone-panel .row .col-lg-4 {
+    text-align: center;
+    padding-top: 6%;
+}
+.home-page-container .why-jobzone-panel .row .col-lg-4 h1 {
+    padding-top: 18%;
+    color: #252525;
+    font-family: "SFUI Display - Regular";
+    font-size: 44px;
+    font-weight: 400;    
+}
+.home-page-container .how-it-works-panel {
+    padding-top: 7%;
+    padding-bottom: 8%;
+}
+.home-page-container .how-it-works-panel .row .col-lg-6 h1 {
+    color: #252525;
+    font-family: "SFUI Display - Regular";
+    font-size: 44px;
+    font-weight: 400; 
+}
+.home-page-container .why-jobzone-panel .row .col-lg-4 h3 {
+    padding-top: 3%;
+    color: #8d8d8d;
+    font-family: "SFUI Display - Light";
+    font-size: 30px;
+    font-weight: 300;
+    /* Text style for "Digital th" */
+    letter-spacing: 0.4px;
+}
+.home-page-container .how-it-works-panel .row .col-lg-6 h3 {
+    color: #8d8d8d;
+    font-family: "SFUI Display - Light";
+    font-size: 30px;
+    font-weight: 300;
+    /* Text style for "Digital th" */
+    letter-spacing: 0.4px;
+}
+/* How It Works Panel */
+.home-page-container .how-it-works-panel {
+    width: 84%;
+    margin: 0 auto;
+}
+.home-page-container .how-it-works-panel .row {
+    text-align: center;
+    padding-top: 11%;
+}
+.home-page-container .how-it-works-panel .row .col-lg-6 {
+    display: flex;
+    padding: 0 8%;
+    flex-direction: column;
+    justify-content: center;
+}
+.home-page-container .how-it-works-panel .row .col-lg-6 img {
+    width: 100%;
+}
+/* MEDIA  */
 @media screen and (max-width: 1460px) {
-    .home-page-container .row .col-lg-6 .left-text  h1 {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
         font-size: 78px;
     }
-    .home-page-container .row .col-lg-6 .left-text  p {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  p {
         font-size: 30px;
     }
 }
 @media screen and (max-width: 1200px) {
-    .home-page-container .row .col-lg-6 .left-text  h1 {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
         font-size: 64px;
     }
-    .home-page-container .row .col-lg-6 .left-text  p {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  p {
         font-size: 24px;
     }
+    .home-page-container .why-jobzone-panel .row .col-lg-4 h1 {
+        font-size: 36px;
+    }
+    .home-page-container .why-jobzone-panel .row .col-lg-4 h3 {
+        font-size: 24px;
+    }
+
 }
 @media screen and (max-width: 992px) {
-    .home-page-container .row .col-lg-6 .left-text  h1 {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
         font-size: 102px;
     }
-    .home-page-container .row .col-lg-6 .left-text  p {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  p {
         font-size: 40px;
     }
-    .home-page-container .row .col-lg-6 .left-text {
+    .home-page-container .row.home-panel .col-lg-6 .left-text {
         padding-left: 14%;
         padding-right: 14%;
+    }
+    .home-page-container .why-jobzone-panel .row .col-lg-4 h1 {
+        font-size: 44px;
+    }
+    .home-page-container .why-jobzone-panel .row .col-lg-4 h3 {
+        font-size: 30px;
+    }
+    .home-page-container .row.home-job-panel .col-lg-6.right-business-image img:nth-child(3) {
+        right: 11%;
+    }
+    .home-page-container .row.home-job-panel .col-lg-6.left-job-image img:nth-child(2) {
+        left: 37%;
+    }
+    .home-page-container .row.home-job-panel .col-lg-6.right-business-image img:nth-child(2) {
+        right: 42%;
     }
 }
