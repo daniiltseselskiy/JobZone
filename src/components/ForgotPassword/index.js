@@ -1,7 +1,8 @@
 import React , { Component } from 'react'
 import { Container, Row , Col, Input } from 'reactstrap'
 import PinBox from 'react-pin-input'
-import BackButton from '../../assets/images/authcontainer/back-button.png'
+import BackButton from '../../assets/images/authcontainer/back-button.png';
+import BackgroundImage from '../../assets/images/authcontainer/auth-image.png';
 import './index.css'
 import AuthContainer from '../AuthContainer'
 const Style = {
@@ -16,7 +17,7 @@ const InputStyle = {
 class ForgotPassword extends Component {
     render () {
         return (
-            <AuthContainer>
+            <AuthContainer BackgroundImage={BackgroundImage}>
                 <Container className="forgot-password-container">
                     <h1>Forgot Password</h1>
                     <div className="middle-container">

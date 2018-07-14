@@ -6,6 +6,8 @@ import LogoImage from '../../assets/images/header/logo.png'
 
 class AuthContainer extends Component {
     render () {
+        const {BackgroundImage } = this.props;
+        
         return (
             <Container className="auth-container">
                 <Row>
@@ -13,7 +15,7 @@ class AuthContainer extends Component {
                         <img src={ LogoImage } alt="Logo Images" />
                         {this.props.children}
                     </Col>
-                    <Col lg="6" className="right-auth-image" />
+                    <Col lg="6" className="right-auth-image" style={{ backgroundImage: `url(${BackgroundImage})` }} />
                 </Row>
             </Container>
         )

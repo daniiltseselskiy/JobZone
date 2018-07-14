@@ -9,7 +9,6 @@
     background-repeat: no-repeat;
     background-position: center;
     padding: 0;
-    background-image: url("../../assets/images/authcontainer/auth-image.png");
 }
 .auth-container .row .col-lg-6.left-logo-image {
     height: 100vh;

@@ -1,0 +1,208 @@
+ .signup-container {
+    max-width: 100%;
+    height: auto;
+}
+
+.signup-container label.label-top-title {
+    margin-top: 72px;
+    color: #252525;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.signup-container form {
+    width: 60%;
+    margin: 60px 20% 0 20%;
+    text-align: start;
+}
+.signup-container form input.form-control {
+    margin-top: 60px;
+    padding: 2% 0;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-radius: 0;
+}
+.signup-container form .form-check {
+    margin-top: 40px;
+}
+.signup-container form .form-check .form-check-label  {
+    
+    color: #252525;
+    font-size: 14px;
+    font-weight: 500;
+    color: #888888;
+    letter-spacing: -0.16px;
+}
+.signup-container form .form-check .form-check-label a {
+    font-weight: 700;
+    color: #252525;
+}
+.signup-container form input::placeholder {
+    color: #bcbcbc;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: -0.16px;
+}
+
+.signup-container form input:focus {
+    box-shadow: none;
+}
+.signup-container form img.one-image-button {
+    display: block;
+    margin: 150px auto 0 auto;
+    width: 60%;
+}
+.signup-container form img:hover {
+    cursor: pointer;
+}
+
+.signup-container label.label-bottom-link {
+    color: #888888;
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.21px;
+}
+.signup-container .label-bottom-link a  {
+    color: #8951d7;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.21px;
+    border-style: none;
+    background: transparent;
+}
+/* Second Step CSS */
+.signup-container form .stepper-container {
+    display:  flex;
+    padding: 0;
+    margin-top: 150px;
+}
+.signup-container form .stepper-container img:nth-child(1) {
+    margin: 0;
+    
+    
+}
+.signup-container form .stepper-container img:nth-child(2) {
+    margin: 0 0 0 5%;
+}
+/* //////////////////////////////////////////// Verification Code CSS ///////////////////////////////////////////////////// */
+.verification-code-container .stepper-container {
+    margin-top: 249px;
+}
+.verification-code-container .stepper-container img:nth-child(2) {
+    margin: 0 0 0 5%;
+}
+.verification-code-container {
+    max-width: 100%;
+    height: auto;
+    position: relative;
+}
+.verification-code-container h1 {
+    margin-top: 72px;
+    color: #252525;
+    /* font-family: "SFUI Display - Regular"; */
+    font-size: 28px;
+    font-weight: 400;
+}
+.verification-code-container .middle-container {
+    padding-top: 103px;
+    width: 60%;
+    margin: 0 10% 0 30%;
+    text-align: start;
+}
+.verification-code-container .middle-container h5 {
+    margin-top: 36px;
+    color: #f889a9;
+    /* font-family: "SFUI Text - Regular"; */
+    font-size: 14px;
+    font-weight: 400;
+    /* Text style for "00:30" */
+    letter-spacing: -0.16px;    
+    
+}
+.verification-code-container .middle-container h6 {
+    margin-top: 20px;
+    color: #8951d7;
+    /* font-family: "SFUI Text - Regular"; */
+    font-size: 14px;
+    font-weight: 400;
+    /* Text style for "Resent Cod" */
+    letter-spacing: -0.16px;
+}
+.verification-code-container .middle-container img.one-image-button {
+    margin-top: 180px;
+}
+.verification-code-container .middle-container img:hover {
+    cursor: pointer;
+}
+/* Pin Box */
+.verification-code-container .middle-container .pincode-input-container {
+    margin-top: 28px;
+}
+.verification-code-container .middle-container .pincode-input-container > input.pincode-input-text {
+    padding:0 !important;
+    margin:0 10px !important;
+    width: 102px !important;
+    height: 127px !important;
+    color: #252525;
+    /* font-family: "SFUI Text - Medium"; */
+    font-size: 80px;
+    font-weight: 500;
+    text-align:center !important;
+    border: 1px solid #dedede !important;
+    background: transparent !important;
+    
+}
+.verification-code-container .middle-container .pincode-input-container .pincode-input-text:focus {
+    outline:none !important;
+    box-shadow:none !important;
+}
+
+@media screen and (max-width: 1820px) {
+    .verification-code-container .middle-container {
+        width: 70%;
+        margin: 0 10% 0 20%;
+    }
+    
+}
+@media screen and ( max-width: 1520px ) {
+    .verification-code-container .middle-container .pincode-input-container > input.pincode-input-text {
+        width: 82px !important;
+        height: 107px !important;
+    }
+}
+@media screen and ( max-width: 1300px ) {
+    .verification-code-container .middle-container {
+        width: 90%;
+        margin: 0 5% 0 5%;
+    }
+    .verification-code-container .middle-container .pincode-input-container > input.pincode-input-text {
+        width: 72px !important;
+        height: 97px !important;
+    }
+}
+@media screen and (max-width: 992px ) {
+    .verification-code-container .middle-container {
+        width: 60%;
+        margin: 0 10% 0 30%;
+    }
+    .verification-code-container .middle-container .pincode-input-container > input.pincode-input-text {
+        width: 102px !important;
+        height: 127px !important;
+    }
+}
+@media screen and (max-width: 870px ) {
+    .verification-code-container .middle-container {
+        width: 70%;
+        margin: 0 10% 0 20%;
+    }
+  
+}
+@media screen and (max-width: 760px ) {
+    .verification-code-container .middle-container .pincode-input-container > input.pincode-input-text {
+        width: 82px !important;
+        height: 107px !important;
+    }
+}

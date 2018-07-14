@@ -1,5 +1,6 @@
-import React, { Component } from 'react'
-import { connect } from 'react-redux'
+import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import SignUp from '../../components/SignUp';
 
 class SignUpContainer extends Component {
     constructor (props) {
@@ -13,7 +14,7 @@ class SignUpContainer extends Component {
     render () {
         return (
             <div className="sign-up-page">
-                This is SignUp page.
+                <SignUp {...this.props} />
             </div>
         )
     }
@@ -22,7 +23,7 @@ class SignUpContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        signUpStep: state.Auth.signUpStep
     };
 };
 
