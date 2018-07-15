@@ -6,31 +6,30 @@ import FirstStep from './FirstStep'
 import SecondStep from './SecondStep'
 import ThirdStep from './ThirdStep'
 import FourthStep from './FourthStep'
+import VerificationInProgress from './VerificationInProgress'
 
 class SingUp extends Component {
 
     renderStep = (currentStep) => {
-        console.log(currentStep);
         switch(currentStep) {
             case 1:
-                return <FirstStep />;
+                return <AuthContainer BackgroundImage={BackgroundImage}><FirstStep /></AuthContainer>;
             case 2:
-                return <SecondStep />;
+                return <AuthContainer BackgroundImage={BackgroundImage}><SecondStep /></AuthContainer>;
             case 3:
-                return <ThirdStep />;
+                return <AuthContainer BackgroundImage={BackgroundImage}><ThirdStep /></AuthContainer>;
             case 4:
-                return <FourthStep />;
+                return <VerificationInProgress />
             default:
-                return <FirstStep />
+                return <span>Something went wrong!</span>;
         }
     }
     render () {
-        console.log('****************', this.props.signUpStep);
         const currentStep = this.props.signUpStep;
         return (
-            <AuthContainer BackgroundImage={BackgroundImage}>
+            <div>
                 { this.renderStep( currentStep )}
-            </AuthContainer>
+            </div>
         )
     }
 }

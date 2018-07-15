@@ -2,7 +2,6 @@
     margin: 0;
     padding: 1% 0 10% 0;
     color: #ffffff;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 16px;
     font-weight: 400;
     background-color: #252525;
@@ -24,11 +23,9 @@
     text-decoration: none;
 }
 .footer-container .footer-body .logo-text .job-text {
-    /* font-family: "SFUI Text - Bold"; */
     font-weight: 700;
 }
 .footer-container .footer-body .logo-text .zone-text {
-    /* font-family: "SFUI Text - Regular"; */
     font-weight: 400;
 }
 /* Follow Items  */

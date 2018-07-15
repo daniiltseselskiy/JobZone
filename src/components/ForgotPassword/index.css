@@ -6,7 +6,6 @@
 .forgot-password-container h1 {
     margin-top: 72px;
     color: #252525;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 28px;
     font-weight: 400;
 }
@@ -19,27 +18,22 @@
 .forgot-password-container .middle-container p {
     margin-bottom: 0px;
     color: #a3a3a3;
-    /* font-family: "SFUI Text - Regular"; */
     font-size: 18px;
     font-weight: 400;
 }
 .forgot-password-container .middle-container h5 {
     margin-top: 36px;
     color: #f889a9;
-    /* font-family: "SFUI Text - Regular"; */
     font-size: 14px;
     font-weight: 400;
-    /* Text style for "00:30" */
     letter-spacing: -0.16px;    
     
 }
 .forgot-password-container .middle-container h6 {
     margin-top: 20px;
     color: #8951d7;
-    /* font-family: "SFUI Text - Regular"; */
     font-size: 14px;
     font-weight: 400;
-    /* Text style for "Resent Cod" */
     letter-spacing: -0.16px;
 }
 .forgot-password-container .middle-container img {
@@ -58,7 +52,6 @@
     width: 102px !important;
     height: 127px !important;
     color: #252525;
-    /* font-family: "SFUI Text - Medium"; */
     font-size: 80px;
     font-weight: 500;
     text-align:center !important;

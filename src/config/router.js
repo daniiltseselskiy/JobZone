@@ -10,6 +10,8 @@ import ResetPassword from '../containers/ResetPassword';
 import SignUp from '../containers/SignUp';
 import LogIn from '../containers/LogIn';
 import ForgotPassword from '../containers/ForgotPassword'
+import Profile from '../containers/Profile'
+
 class RouterComponent extends Component {
     render () {
         return (
@@ -20,6 +22,7 @@ class RouterComponent extends Component {
                     <Route path="/forgotpassword" component={ForgotPassword} />
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/log-in" component={LogIn} />
+                    <Route path="/profile" component={Profile} />
                     <Route path="/" component={Homepage} />
                 </Switch>
                 <Footers />

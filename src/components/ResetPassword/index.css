@@ -6,7 +6,6 @@
 .reset-password-container h1 {
     margin-top: 72px;
     color: #252525;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 28px;
     font-weight: 400;
 }
@@ -22,10 +21,8 @@
 
 .reset-password-container input::placeholder {
     color: #bcbcbc;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 14px;
     font-weight: 400;
-    /* Text style for "Phone or E" */
     letter-spacing: -0.16px;
 }
 

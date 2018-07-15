@@ -1,42 +1,45 @@
 .header-container {
+    max-width: 100%;
+    padding: 0;
+}
+/* //////////////////////////////////////Not Logged In Header //////////////////////////// */
+.nliheader-container {
     padding: 1% 0;
     background-color: #f7f8fb;
 }
-.header-container nav {
+.nliheader-container nav {
     width: 73%;
     height: 100%;
     margin: 0 auto;
     padding: 0;
 }
-.header-container .logo-image {
+.nliheader-container .logo-image {
     width: 80%;
     height: 100%;
 }
-.header-container .nav-item {
+.nliheader-container .nav-item {
     
 }
-.header-container .nav-item .nav-text {
+.nliheader-container .nav-item .nav-text {
     /* Style for "Why Jobzon" */
     padding-left: 2rem;
     padding-right: 2rem;
     color: #252525;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 20px;
     font-weight: 400;
 }
-.header-container .nav-item.background-gradient {
+.nliheader-container .nav-item.background-gradient {
     /* Style for "bound" */
     background-repeat: no-repeat;
     background-position: center;
-    /* background-image: linear-gradient(38deg, #6d31b1 0%, #00b2c3 100%); */
     background-image: url("../../assets/images/header/button-background.png");
     background-size: 95%;
 }
-.header-container .nav-item .button-gradient {
+.nliheader-container .nav-item .button-gradient {
     color: white;
 }
 @media screen and (max-width: 1364px) {
-    .header-container .nav-item .nav-text {
+    .nliheader-container .nav-item .nav-text {
         padding-left: 1rem;
         padding-right: 1rem;
         font-size: 18px;
@@ -44,21 +47,84 @@
 }
 
 @media screen and (max-width: 958px) {
-    .header-container .nav-item .nav-text {
+    .nliheader-container .nav-item .nav-text {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         font-size: 18px;
     }   
 }
 @media screen and (max-width: 873px) {
-    .header-container .nav-item .nav-text {
+    .nliheader-container .nav-item .nav-text {
         padding-left: 0.2rem;
         padding-right: 0.2rem;
         font-size: 15px;
     }
-    .header-container .nav-item.background-gradient {
+    .nliheader-container .nav-item.background-gradient {
         /* background-image: linear-gradient(38deg, #6d31b1 0%, #00b2c3 100%); */
         border-radius: 24px;
         width: 120px;
     }
+}
+/* /////////////////////////////////////////Logged In Header /////////////////////////////////////// */
+.liheader-container {
+    max-width: 100%;
+    width: 90%;
+    margin: 0 18% 0 2%;
+    padding: 1rem 1%;
+    background-color: #ffffff;
+
+    /* -webkit-box-shadow: 0px 5px 21px -3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 5px 21px -3px rgba(0,0,0,0.75);
+    box-shadow: 0px 5px 21px -3px rgba(0,0,0,0.75); */
+}
+.liheader-container nav {
+    background-color: #ffffff !important;
+}
+.liheader-container nav label {
+    /* padding-left: 1rem; */
+}
+.liheader-container nav div {
+    margin: 0;
+}
+.liheader-container nav div:nth-child(4) {
+    margin-left: 3%;
+}
+.liheader-container nav .dropdown {
+    margin-left: 3%;
+    cursor: pointer;
+}
+.liheader-container nav .dropdown .dropdown-menu {
+    margin-top: 10px;
+}
+.liheader-container .input-group {
+    width: 50%;
+    margin-left: 8%;
+    padding-left: 20px;
+    background-color: #f7f9f9;
+    border-radius: 100px;
+    
+}
+.liheader-container label {
+    margin-left: 5%;
+}
+.liheader-container .input-group input[type="search"] {
+    border: none;
+    background-color: #f7f9f9;
+    border-radius: 100px;
+}
+
+.liheader-container .input-group .input-group-prepend {
+    display: block;
+}
+
+.liheader-container .input-group .input-group-prepend img {
+    vertical-align: -webkit-baseline-middle;
+}
+
+.liheader-container .input-group input:focus {
+    box-shadow: none;
+}
+
+.liheader-container label {
+    margin-bottom: 0px;
 }

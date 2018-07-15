@@ -1,0 +1,33 @@
+.sidebar-container {
+    padding: 0 1%;
+    text-align: center;
+}
+.sidebar-component {
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.sidebar-component img:hover {
+    cursor: pointer;
+}
+.sidebar-component label {
+    margin-top: 1.3rem;
+    color: #8d8d8d;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -0.23px;
+}
+.sidebar-component labbe:hover {
+    cursor: pointer;
+}
+.sidebar-container img.post-image {
+    margin-top: 4rem;
+    width: 90%;
+}
+.sidebar-container img:hover {
+    cursor: pointer;
+}

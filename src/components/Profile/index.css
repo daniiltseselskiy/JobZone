@@ -1,0 +1,200 @@
+.profile-container {
+    padding: 0 0;
+    max-width: 100%;
+    height: calc(100vh - 96px);
+}
+.profile-container .row {
+    height: 100%;
+}
+.profile-container .row .content-container {
+    -webkit-box-shadow: inset 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: inset 0px 2px 21px 0px rgba(0,0,0,0.35);
+    background-color: #f7f8fb ;
+}
+.profile-container .row .content-container .row .col-lg-8 {
+    padding-left: 9%;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container {
+    margin-top: 2rem;
+    padding: 6% 8% 6% 6%;
+    background-color: #ffffff;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container label {
+    color: #252525;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content {
+    display: flex;
+    margin-top: 4rem;
+   
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(1) {
+    text-align: center;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(1) label {
+    color: #8951d7;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+}
+
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content input {
+    margin-top: 10px;        
+    width: 100%;
+    height: 44px;
+    padding-left: 15px;
+    border-radius: 6px;
+    border: 1px solid #ebebeb;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(2) label:nth-child(1), input:nth-child(1) {
+    height: 28px;
+    color: #252525;
+    font-size: 24px;
+    font-weight: 800;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(2) label:nth-child(2), input:nth-child(2) {
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(3) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+    margin-top: 0px;
+    width: 20%;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(3) img {
+    cursor: pointer;
+    margin-left: 10px;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .top-profile-content div:nth-child(3) img.profile-status {
+    align-self: center;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .bottom-profile-content {
+    margin-top: 2rem;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .bottom-profile-content div {
+    margin-top: 2rem;
+    display: flex;
+    align-items: start;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .bottom-profile-content label, input, textarea {
+    margin-left: 1rem;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .bottom-profile-content input, textarea {
+    width: 100%;
+    height: 44px;
+    padding-left: 15px;
+    border-radius: 6px;
+    border: 1px solid #ebebeb;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .bottom-profile-content input::placeholder, textarea::placeholder {
+    color: #d8d8d8;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container form .bottom-profile-content textarea {
+    height: 161px;
+}
+.profile-container .row .content-container .row .col-lg-8 .profile-content-container  div:nth-child(3) {
+    text-align: center;
+    margin-top: 4rem;
+}
+/* ///////Member Content///////////// */
+.profile-container .row .content-container .row .col-lg-3 .member-content-container {
+    margin-top: 2rem;
+    background-color: #ffffff;
+    text-align: center;
+    border-radius: 6px;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container  input {
+    width: 100%;
+    height: 44px;
+    padding-left: 15px;
+    border-radius: 6px;
+    border: 1px solid #ebebeb;
+}
+
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(1) {
+    padding-top: 4rem;
+    position: relative;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(1) img:nth-child(2) {
+    position: absolute;
+    right: 20px;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(2) {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(2) input::placeholder {
+    text-align: center;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(2) label:nth-child(1), input:nth-child(1) {
+    height: 28px;
+    color: #252525;
+    font-size: 24px;
+    font-weight: 800;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(2) label:nth-child(2), input:nth-child(2) {
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+   
+}
+
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(3), div:nth-child(4) {
+    margin-top: 2rem;
+    text-align: start;
+    display: flex;
+    align-items: center;
+
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(3) label, div:nth-child(3) label {
+    margin-bottom: 0;
+    padding-left: 10px;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(3) input::placeholder, div:nth-child(4) input::placeholder {
+
+    margin-bottom: 0;
+    color: #d8d8d8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(5) {
+    position: relative;
+    margin-top: 3rem;
+    padding-bottom: 4rem;
+    text-align: start;
+    
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(5) img {
+    position: absolute;
+    right: 10px;
+}
+.profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(6) {
+    text-align: center;
+    margin-top: 4rem;
+}

@@ -1,1 +1,3 @@
+export const OPEN_EDIT_PROFILE = 'OPEN_EDIT_PROFILE';
 
+export const OPEN_EDIT_MEMBER = 'OPEN_EDIT_MEMBER'

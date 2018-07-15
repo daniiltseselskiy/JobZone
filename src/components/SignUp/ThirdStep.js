@@ -1,8 +1,9 @@
 import React , { Component } from 'react'
-import './index.css'
 import PinBox from 'react-pin-input'
-import { Container, Col, Form, FormGroup, Row, Input, Label } from 'reactstrap'
+import { Container, Col, Form, FormGroup, Row, Input, Label, Button } from 'reactstrap'
 import BackButton from '../../assets/images/authcontainer/back-button.png'
+import './index.css'
+
 class ThirdStep extends Component {
     render () {
         return (
@@ -17,7 +18,7 @@ class ThirdStep extends Component {
                         onComplete={(value, index) => {}}
                     />
                     <h5>00:30</h5>
-                    <h6>Resent Code</h6>
+                    <Button>Resent Code</Button>
                     <img className="one-image-button" src={BackButton} alt="Back Button" />
                 </div>
             </Container>

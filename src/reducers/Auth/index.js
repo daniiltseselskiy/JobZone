@@ -4,7 +4,8 @@ import {
 } from '../../constants/actionTypes';
 
 const initialState = {
-   signUpStep: 4
+   signUpStep: 5,
+   isLoggedIn: true,
 };
 
 const reducer = (state = initialState, action) => {

@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
-import Header from '../../components/Header'
+import Header from '../../components/Header';
+import { connect } from 'react-redux';
+
 class HeaderContainer extends Component {
     constructor (props) {
         super(props)
@@ -15,10 +17,20 @@ class HeaderContainer extends Component {
 
         return (
             <div className={`header${classname}`}>
-                <Header />
+                <Header {...this.props}/>
             </div>
         )
     }
 }
 
-export default withRouter(HeaderContainer);
+const mapStateToProps = (state, ownProps) => {
+    return {
+        isLoggedIn: state.Auth.isLoggedIn
+    }
+}
+
+const mapDispatchToProps = (dispatch, ownProps) => {
+    return {}
+}
+
+export default withRouter(connect(mapStateToProps, mapDispatchToProps)(HeaderContainer));

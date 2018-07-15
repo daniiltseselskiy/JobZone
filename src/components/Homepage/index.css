@@ -15,16 +15,13 @@
 }
 .home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
     color: #8951d7;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 102px;
     font-weight: 400;
 }
 .home-page-container .row.home-panel .col-lg-6 .left-text  p {
     color: #252525;
-    /* font-family: "SFUI Display - Light"; */
     font-size: 40px;
     font-weight: 300;
-    /* Text style for "Digital th" */
     letter-spacing: 0.53px;
 }
 .home-page-container .row.home-panel .col-lg-6.right-image {
@@ -76,7 +73,6 @@
 .home-page-container .why-jobzone-panel h1, .how-it-works-panel h1 {
     text-align: center;
     color: #252525;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 70px;
     font-weight: 400;
 }
@@ -88,7 +84,6 @@
 .home-page-container .why-jobzone-panel .row .col-lg-4 h1 {
     padding-top: 18%;
     color: #252525;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 44px;
     font-weight: 400;    
 }
@@ -98,25 +93,20 @@
 }
 .home-page-container .how-it-works-panel .row .col-lg-6 h1 {
     color: #252525;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 44px;
     font-weight: 400; 
 }
 .home-page-container .why-jobzone-panel .row .col-lg-4 h3 {
     padding-top: 3%;
     color: #8d8d8d;
-    /* font-family: "SFUI Display - Light"; */
     font-size: 30px;
     font-weight: 300;
-    /* Text style for "Digital th" */
     letter-spacing: 0.4px;
 }
 .home-page-container .how-it-works-panel .row .col-lg-6 h3 {
     color: #8d8d8d;
-    /* font-family: "SFUI Display - Light"; */
     font-size: 30px;
     font-weight: 300;
-    /* Text style for "Digital th" */
     letter-spacing: 0.4px;
 }
 /* How It Works Panel */

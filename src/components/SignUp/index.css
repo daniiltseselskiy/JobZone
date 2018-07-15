@@ -102,7 +102,6 @@
 .verification-code-container h1 {
     margin-top: 72px;
     color: #252525;
-    /* font-family: "SFUI Display - Regular"; */
     font-size: 28px;
     font-weight: 400;
 }
@@ -115,20 +114,16 @@
 .verification-code-container .middle-container h5 {
     margin-top: 36px;
     color: #f889a9;
-    /* font-family: "SFUI Text - Regular"; */
     font-size: 14px;
     font-weight: 400;
-    /* Text style for "00:30" */
     letter-spacing: -0.16px;    
     
 }
 .verification-code-container .middle-container h6 {
     margin-top: 20px;
     color: #8951d7;
-    /* font-family: "SFUI Text - Regular"; */
     font-size: 14px;
     font-weight: 400;
-    /* Text style for "Resent Cod" */
     letter-spacing: -0.16px;
 }
 .verification-code-container .middle-container img.one-image-button {
@@ -147,7 +142,6 @@
     width: 102px !important;
     height: 127px !important;
     color: #252525;
-    /* font-family: "SFUI Text - Medium"; */
     font-size: 80px;
     font-weight: 500;
     text-align:center !important;
@@ -198,11 +192,33 @@
         width: 70%;
         margin: 0 10% 0 20%;
     }
-  
 }
 @media screen and (max-width: 760px ) {
     .verification-code-container .middle-container .pincode-input-container > input.pincode-input-text {
         width: 82px !important;
         height: 107px !important;
     }
+}
+
+/* /////////////////////////////////////  Verification In Progress //////////////////////////////////////// */
+.verification-progress-container {
+    padding: 0 1%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.verification-progress-container label {
+    color: #252525;
+    margin-top: 25px;
+}
+.verification-progress-container label:nth-child(1) {
+    font-size: 28px;
+    font-weight: 700;
+}
+.verification-progress-container label:nth-child(2) {
+    font-family: "Open Sans";
+    font-size: 20px;
 }
