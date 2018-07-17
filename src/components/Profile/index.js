@@ -42,7 +42,7 @@ class Profile extends Component {
             <Container className="profile-container">
                 <Row>
                     <Col lg="2">
-                        <SideBar />
+                        <SideBar isProfile={ true } />
                     </Col>
                     <Col lg="10" className="content-container">
                         <Row>

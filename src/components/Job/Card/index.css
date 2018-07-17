@@ -1,0 +1,82 @@
+.card-content {
+
+    display: inline-block;
+    width: 446px;
+    padding: 1rem;
+    border-radius: 16px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+}
+.card-content .card-content-image {
+    position: relative;
+    padding: 0;
+}
+.card-content .card-content-image img:nth-child(1) {
+    width: 100%;
+}
+.card-content .card-content-image img:nth-child(2) {
+    position: absolute;
+    bottom: -18%;
+    right: 15%;
+    cursor: pointer;
+}
+.card-content .card-content-image img:nth-child(3) {
+    position: absolute;
+    bottom: -18%;
+    right: 0%;
+    cursor: pointer;
+}
+.card-content .card-content-job-position {
+    display: inline-block;
+    align-items: center;
+    padding: 1% 0;
+    margin-top: 7.5%;
+}
+.card-content .card-content-job-position label {
+    margin-bottom: 0;
+    color: #252525;
+    font-size: 24px;
+    font-weight: 700;
+}
+.card-content .card-content-job-position img {
+    float: right;
+    cursor: pointer;
+}
+.card-content .card-content-company {
+    display: inline-block;
+    padding: 1% 0;
+}
+.card-content .card-content-company label:nth-child(1) {
+    padding: 0;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card-content .card-content-company label:nth-child(2) {
+    float: right;
+    margin-right: 10px;
+    color: #8951d7;
+    font-size: 12px;
+    font-weight: 400;
+
+}
+.card-content .card-content-image-label {
+    display: flex;
+    align-items: flex-start;
+    padding: 3% 1%;
+}
+.card-content .card-content-image-label label, img:nth-child(2) {
+    margin-left: 3%;
+}
+.card-content .card-content-image-label img {
+    
+}
+.card-content .card-content-label {
+    padding: 0;
+    margin-top: 5%;
+    color: #afafaf;
+    font-size: 12px;
+    font-weight: 400;
+}

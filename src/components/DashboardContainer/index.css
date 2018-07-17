@@ -1,0 +1,24 @@
+.dashboard-container {
+    display: flex;
+    padding: 0;
+    max-width: 100%;
+    background-color: #f7f8fb;
+    
+}
+
+.dashboard-container .sidebar-content {
+    margin: 0;
+    width: 234px;
+    background-color: #ffffff;
+    
+}
+.dashboard-container .content-container {
+    display: flex;
+    height: 100%;
+    max-width: 100%;
+    min-height: calc(100vh - 96px);
+    margin: 0;
+    -webkit-box-shadow: inset 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: inset 0px 2px 21px 0px rgba(0,0,0,0.35);
+}

@@ -1,10 +1,10 @@
 .profile-container {
     padding: 0 0;
     max-width: 100%;
-    height: calc(100vh - 96px);
 }
 .profile-container .row {
-    height: 100%;
+    min-height: calc(100vh - 96px);
+    display: flex;
 }
 .profile-container .row .content-container {
     -webkit-box-shadow: inset 0px 2px 21px 0px rgba(0,0,0,0.35);
@@ -17,6 +17,7 @@
 }
 .profile-container .row .content-container .row .col-lg-8 .profile-content-container {
     margin-top: 2rem;
+    margin-bottom: 2rem;
     padding: 6% 8% 6% 6%;
     background-color: #ffffff;
     border-radius: 6px;
@@ -139,6 +140,7 @@
     position: relative;
 }
 .profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(1) img:nth-child(2) {
+    cursor: pointer;
     position: absolute;
     right: 20px;
 }
@@ -158,6 +160,7 @@
     font-weight: 800;
 }
 .profile-container .row .content-container .row .col-lg-3 .member-content-container form div:nth-child(2) label:nth-child(2), input:nth-child(2) {
+    margin-top: 1rem;
     color: #252525;
     font-size: 18px;
     font-weight: 500;
@@ -198,3 +201,4 @@
     text-align: center;
     margin-top: 4rem;
 }
+

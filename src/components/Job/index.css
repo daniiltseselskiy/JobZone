@@ -1,0 +1,39 @@
+
+.job-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 83%;
+    height: 100%;
+    margin: 0 auto 5% auto;
+}
+.job-content .mark-container {
+    margin: 2% 0;
+    height: 14%;
+    display: flex;
+}
+.job-content .mark-container .mark-content {
+    position: relative;  
+    width: 202px;
+    margin-right: 3%;
+    padding: 0;
+    margin-left: 0;
+}
+.job-content .mark-container .mark-content img {
+    width: 100%;
+}
+.job-content .mark-container .mark-content label:nth-child(2) {
+    position: absolute;
+    left: 85px;
+    top: 35%;
+    padding: 0px;
+    color: #8951d7;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -0.35px;
+}
+
+.job-content .main-container {
+    max-width: 100%;
+    height: 100%;
+}

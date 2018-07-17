@@ -1,0 +1,133 @@
+.cnjob-container {
+    display: inline-block;
+    width: 40.7%;
+    margin: 2rem 36.6% 5% 22.7%;
+    padding: 1rem 6%;
+    border-radius: 16px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+
+}
+.cnjob-container .cnjob-container-image {
+    padding: 0;
+}
+.cnjob-container .cnjob-container-image img {
+    width: 100%;
+}
+.cnjob-container .cnjob-container-image label {
+    margin-left: 9%;
+    margin-top: 3%;
+    color: #8951d7;
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: -0.14px;
+    cursor: pointer;
+}
+.cnjob-container .cnjob-container-job-position {
+    padding: 3% 0 3% 10%;
+    margin-top: 3%;
+}
+.cnjob-container .cnjob-container-job-position input {
+    padding: 7%;
+    margin: 0;
+    color: #252525;
+    font-size: 24px;
+    font-weight: 400;
+}
+.cnjob-container .cnjob-container-job-position input::placeholder {
+    color: #dbdbdb;
+    font-size: 24px;
+    font-weight: 400;
+}
+.cnjob-container .cnjob-container-company {
+    
+    padding: 3% 0 3% 10%;
+}
+.cnjob-container .cnjob-container-company input {
+    margin: 0;
+    padding: 7%;
+    color: #252525;
+    font-size: 18px;
+    font-weight: 400;
+    }
+.cnjob-container .cnjob-container-company input::placeholder {
+    color: #252525;
+    font-size: 18px;
+    font-weight: 400;
+}
+.cnjob-container .cnjob-container-image-input {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    padding: 3% 1%;
+}
+.cnjob-container .cnjob-container-image-input input {
+    color: #252525;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.cnjob-container .cnjob-container-image-input input::placeholder {
+    color: #d8d8d8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+}
+.cnjob-container .cnjob-container-description {
+    margin-top: 0;
+    display: flex;
+    align-items: flex-start;
+    padding: 3% 1%;
+}
+.cnjob-container .cnjob-container-description textarea {
+    min-height: 80px ;
+    color: #252525;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.cnjob-container .cnjob-container-description textarea::placeholder {
+    color: #d8d8d8;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+
+}
+.cnjob-container .cnjob-container-day {
+    padding-left: 12%;
+}
+.cnjob-container .cnjob-container-day label {
+    text-align: center;
+    margin-right: 2%;
+    width: 12%;
+    padding: 2% 0; 
+    border: 1px solid;
+    border-radius: 5px;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    cursor: pointer;
+}
+
+.cnjob-container .cnjob-container-button {
+    position: relative;
+    margin-top: 10%;
+    text-align: center;
+    margin-bottom: 5%;
+   
+}
+.cnjob-container .cnjob-container-button img:nth-child(1) {
+    width: 50%;
+    cursor: pointer;
+}
+.cnjob-container .cnjob-container-button img:nth-child(2) {
+    position: absolute;
+    width: 20%;
+    left: 0%;
+    top: 22%;
+    cursor: pointer;
+}

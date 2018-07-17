@@ -1,0 +1,136 @@
+.expanded-applied-user-card-content {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    border-radius: 16px;
+    box-shadow: 0 1px 5px #dddddd;
+}
+.expanded-applied-user-card-content .left-card {
+    width: 80%;
+    height: 100%;
+    padding-left: 4%;
+}
+.expanded-applied-user-card-content .left-card .left-top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 1%;
+}
+.expanded-applied-user-card-content .left-card .left-top-container .image-content {
+    
+}
+.expanded-applied-user-card-content .left-card .left-top-container .label-content {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 2%;
+    width: 70%;
+    justify-content: space-around;
+}
+.expanded-applied-user-card-content .left-card .left-top-container .label-content label:nth-child(1) {
+    margin: 0;
+    color: #252525;
+    font-size: 20px;
+    font-weight: 700;
+}
+.expanded-applied-user-card-content .left-card .left-top-container .label-content label:nth-child(2) {
+    margin: 0;
+    color: #252525;
+    font-size: 16px;
+    font-weight: 500;
+}
+.expanded-applied-user-card-content .left-card .left-location-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.expanded-applied-user-card-content .left-card .left-location-container label {
+    padding: 0;
+    margin-left: 3%;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.expanded-applied-user-card-content .left-card .left-description-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    align-items: flex-start;
+}
+.expanded-applied-user-card-content .left-card .left-description-container label {
+    padding: 0;
+    margin-left: 3%;
+    color: #252525;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.expanded-applied-user-card-content .left-card .left-school-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1%;
+    align-items: flex-start;
+}
+.expanded-applied-user-card-content .left-card .left-school-container .left-school-label-container {
+    padding: 0;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: column;
+
+}
+.expanded-applied-user-card-content .left-card .left-school-container .left-school-label-container label:nth-child(1) {
+    color: #252525;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.expanded-applied-user-card-content .left-card .left-school-container .left-school-label-container label {
+    padding: 0;
+    color: #a3a3a3;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.expanded-applied-user-card-content .left-card .left-school-container .left-skills-label-container {
+    padding: 0;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.expanded-applied-user-card-content .left-card .left-school-container .left-skills-label-container label {
+    padding: 2% 10%;
+    margin-right: 6%;
+    margin-bottom: 0;
+    color: #339cb5;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    border-radius: 37px;
+    border: 1px solid #339cb5;
+}
+.expanded-applied-user-card-content .left-card .left-school-container .left-global-label-container {
+    padding: 0;
+    margin-left: 3%;
+    display: flex;
+    flex-direction: row;
+}
+.expanded-applied-user-card-content .left-card .left-school-container .left-global-label-container label {
+    color: #252525;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 18px;
+}
+.expanded-applied-user-card-content .left-card div:nth-last-child(1) {
+    padding: 2% 4%;
+}
+.expanded-applied-user-card-content .right-card {
+    width: 20%;
+    height: 100%;
+    align-items: flex-start;
+    text-align: center;
+}
+.expanded-applied-user-card-content .right-card img {
+    margin-top: 25%;
+    cursor: pointer;
+}

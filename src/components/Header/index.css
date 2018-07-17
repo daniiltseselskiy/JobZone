@@ -108,13 +108,19 @@
     margin-left: 5%;
 }
 .liheader-container .input-group input[type="search"] {
+    margin: 0;
     border: none;
     background-color: #f7f9f9;
     border-radius: 100px;
 }
-
+.liheader-container .input-group input[type="search"]::placeholder {
+    color: #c9c9c9;
+    font-size: 15px;
+    font-weight: 400;
+}
 .liheader-container .input-group .input-group-prepend {
-    display: block;
+    display: flex;
+    align-items: center;
 }
 
 .liheader-container .input-group .input-group-prepend img {

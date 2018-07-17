@@ -18,7 +18,7 @@ class ThirdStep extends Component {
                         onComplete={(value, index) => {}}
                     />
                     <h5>00:30</h5>
-                    <Button>Resent Code</Button>
+                    <h6>Resent Code</h6>
                     <img className="one-image-button" src={BackButton} alt="Back Button" />
                 </div>
             </Container>

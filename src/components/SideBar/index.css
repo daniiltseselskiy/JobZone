@@ -31,3 +31,10 @@
 .sidebar-container img:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 992px ) {
+    .sidebar-container img.post-image {
+        margin-bottom: 4%;
+        width: 184px;
+    }
+}

@@ -4,7 +4,8 @@
     -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
     box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
 }
-
+.container {
+}
 /* Login page */
 .header.log-in {
     display: none;
@@ -39,5 +40,22 @@
 
 /* Profile Page */
 .footer.profile {
+    display: none;
+}
+/* Job Page  */
+.header.job {
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+}
+.footer.job {
+    display: none;
+}
+/* Create-job Page  */
+.footer.create-job {
+    display: none;
+}
+/* Edit Job Page  */
+.footer.edit-job {
     display: none;
 }

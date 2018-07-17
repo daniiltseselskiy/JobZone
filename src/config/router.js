@@ -11,6 +11,9 @@ import SignUp from '../containers/SignUp';
 import LogIn from '../containers/LogIn';
 import ForgotPassword from '../containers/ForgotPassword'
 import Profile from '../containers/Profile'
+import Job from '../containers/Job'
+import CreateJob from '../containers/CreateJob'
+import EditJob from '../containers/EditJob'
 
 class RouterComponent extends Component {
     render () {
@@ -23,6 +26,9 @@ class RouterComponent extends Component {
                     <Route path="/sign-up" component={SignUp} />
                     <Route path="/log-in" component={LogIn} />
                     <Route path="/profile" component={Profile} />
+                    <Route path="/job" component={Job} />
+                    <Route path="/create-job" component={CreateJob} />
+                    <Route path="/edit-job" component={EditJob} />
                     <Route path="/" component={Homepage} />
                 </Switch>
                 <Footers />

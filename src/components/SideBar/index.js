@@ -8,6 +8,7 @@ import PostJobButton from '../../assets/images/homepage/post-job-button.png'
 
 class SideBar extends Component {
     render () {
+        const { isProfile } = this.props
         return (
             <Container className="sidebar-container">
                 <Container className="sidebar-component">
@@ -22,7 +23,7 @@ class SideBar extends Component {
                     <img src={MessageIcon} alt="Message Icon" />
                     <Label>Message</Label>
                 </Container>
-                <img className="post-image" src={ PostJobButton } alt="Post Job Button" />
+                { isProfile && <img className="post-image" src={ PostJobButton } alt="Post Job Button" />}
             </Container>
         )
     }

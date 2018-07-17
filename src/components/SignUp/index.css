@@ -119,7 +119,7 @@
     letter-spacing: -0.16px;    
     
 }
-.verification-code-container .middle-container h6 {
+.verification-code-container .middle-container h6, button {
     margin-top: 20px;
     color: #8951d7;
     font-size: 14px;
