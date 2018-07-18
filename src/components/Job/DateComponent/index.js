@@ -1,0 +1,88 @@
+import React, { Component } from 'react'
+import { Label, Input } from 'reactstrap'
+import './index.css'
+import BackArrow from '../../../assets/images/job/back-arrow.png'
+import NextArrow from '../../../assets/images/job/next-arrow.png'
+import SaveButton from '../../../assets/images/job/save-button.png'
+import Slider from "react-slick";
+
+class DateComponent extends Component {
+    changeStaus = (checkBox) => {
+        if (checkBox.checked) {
+
+        }
+    } 
+
+    render () { 
+        return (
+            <div className="date-container">
+                <div className="days-container">
+                    <Slider
+                        infinite={true}
+                        speed={100}
+                        slidesToShow={5}
+                        slidesToScroll={1}
+                        centerMode={true}
+                        arrows={true}
+                        prevArrow={<div className="arrow-content"><img src={BackArrow} alt="Back Arrow"/></div>}
+                        nextArrow={<div className="arrow-content"><img src={NextArrow} alt="Next Arrow"/></div>}
+                    >
+                        <div className="day-content">
+                            <Label>Mon</Label>
+                            <Label>Jun25</Label>
+                        </div>
+                        <div className="day-content">
+                            <Label>Tue</Label>
+                            <Label>Jun26</Label>
+                        </div>
+                        <div className="day-content">
+                            <Label>Wed</Label>
+                            <Label>Jun27</Label>
+                        </div>
+                        <div className="day-content">
+                            <Label>Thu</Label>
+                            <Label>Jun28</Label>
+                        </div>
+                        <div className="day-content">
+                            <Label>Fri</Label>
+                            <Label>Jun29</Label>
+                        </div>
+                        <div className="day-content">
+                            <Label>Sat</Label>
+                            <Label>Jun30</Label>
+                        </div>
+                    </Slider>
+                </div>
+                <div className="time-container">
+                    <div className="time-content" >
+                        <Input type="checkbox" onClick={() => this.changeStaus(this)}/>
+                        <Label>9:00am - 10:00am</Label>
+                        <img src={ SaveButton } alt="Save Button"/>
+                    </div>
+                    <div className="time-content">
+                        <Input type="checkbox" />
+                        <Label>9:00am - 10:00am</Label>
+                        <img src={ SaveButton } alt="Save Button"/>
+                    </div>
+                    <div className="time-content">
+                        <Input type="checkbox" />
+                        <Label>9:00am - 10:00am</Label>
+                        <img src={ SaveButton } alt="Save Button"/>
+                    </div>
+                    <div className="time-content">
+                        <Input type="checkbox" />
+                        <Label>9:00am - 10:00am</Label>
+                        <img src={ SaveButton } alt="Save Button"/>
+                    </div>
+                    <div className="time-content">
+                        <input type="checkbox"/>
+                        <Label>9:00am - 10:00am</Label>
+                        <img src={ SaveButton } alt="Save Button"/>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+}
+
+export default DateComponent

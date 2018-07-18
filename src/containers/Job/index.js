@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Job from '../../components/Job';
+import {
+    onChangeContent
+} from '../../actions/job';
  
 
 class JobContainer extends Component {
@@ -14,7 +17,7 @@ class JobContainer extends Component {
     render () {
         return (
             <div className="job-page">
-                <Job />
+                <Job {...this.props} />
             </div>
         )
     }
@@ -23,13 +26,15 @@ class JobContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        currentTap: state.Job.currentTap
     };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        
+        onChangeContent: currentTap => {
+            dispatch(onChangeContent(currentTap));
+        }
     };
 }
 

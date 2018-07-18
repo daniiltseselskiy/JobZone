@@ -23,7 +23,7 @@
 .expanded-applied-user-card-content .left-card .left-top-container .label-content {
     display: flex;
     flex-direction: column;
-    padding: 7% 2%;
+    padding: 3% 2%;
     width: 70%;
     justify-content: space-around;
 }

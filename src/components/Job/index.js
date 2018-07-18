@@ -31,7 +31,7 @@ class Job extends Component {
                         </Container>
                         <Container className="main-container">
                             {/* <JobCard /> */}
-                            <JobDetail />
+                            <JobDetail {...this.props} />
                         </Container>
                     </Container>
             </DashboardContainer>

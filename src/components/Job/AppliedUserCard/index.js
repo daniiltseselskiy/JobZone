@@ -7,9 +7,26 @@ import FullProfileButton from '../../../assets/images/job/full-profile-button.pn
 import OvalImage from '../../../assets/images/job/oval.png'
 import LocationImage from '../../../assets/images/job/location-icon.png'
 import InfoImage from '../../../assets/images/job/info-icon.png'
+import StartChatButton from '../../../assets/images/job/start-chat-button.png'
 
 class AppliedUserCard extends Component {
+    renderItem = ( isShortlist, isScheduled ) => {
+        if ( isShortlist == true ) {
+            return <img src={StartChatButton} alt="Start Chat Button"/>
+        } else if (isShortlist == false ){
+            return <img src={ShortlistButton} alt="Shortlist Button"/>
+        } 
+
+        if ( isScheduled == true ) {
+            return  <div className="scheduled">
+                        <Label>Jun 27, Wed</Label>
+                        <Label>10:00 am-11:00am</Label>
+                    </div>
+        } 
+    }
     render () {
+        const { isShortlist, isScheduled } = this.props
+        
         return (
             <div className="applied-user-card-content">
                 <div className="left-card">
@@ -32,7 +49,7 @@ class AppliedUserCard extends Component {
                     </div>
                 </div>
                 <div className="right-card">
-                    <img src={ShortlistButton} alt="Shortlist Button"/>
+                    { this.renderItem( isShortlist, isScheduled ) }
                     <img src={RejectButton} alt="Reject Button"/>
                     <img src={FullProfileButton} alt="Full Profile Button"/>
                 </div>

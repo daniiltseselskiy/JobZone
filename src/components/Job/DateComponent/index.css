@@ -1,0 +1,101 @@
+.date-container {
+    display: flex;
+    flex-direction: column;
+}
+.date-container .days-container {
+    width: 80%;
+    margin: 0 auto;
+}
+.date-container .days-container .slick-slider .slick-list .slick-track {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.date-container .days-container .slick-slider .slick-arrow {
+    
+    display: flex !important;
+    flex-direction: row;
+    align-items: center;
+    display: block;
+    height: 80%;
+    width: 12%;
+    box-shadow: 0 1px 5px #dddddd;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+.date-container .days-container .day-content {
+    
+    display: flex !important;
+    width: 75% !important;
+    padding: 15% 0%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 1px 5px #dddddd;
+    border-radius: 16px;
+    background-color: #ffffff;
+}
+/* .date-container .days-container .arrow-content {
+    width: 10%;
+    padding: 1% 0%;
+    margin: 1% 2.5% 1% 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 1px 5px #dddddd;
+    border-radius: 16px;
+    background-color: #ffffff;
+} */
+/* .date-container .days-container .day-content {
+    width: 10%;
+    padding: 1% 0%;
+    margin: 1% 2.5% 1% 0;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 1px 5px #dddddd;
+    border-radius: 16px;
+    background-color: #ffffff;
+} */
+.date-container .days-container .day-content label:nth-child(1) {
+    margin: 0;
+    padding: 0;
+    color: #8951d7;
+    font-size: 20px;
+    font-weight: 700;
+}
+.date-container .days-container .day-content label:nth-child(2) {
+    margin: 0;
+    padding: 0;
+    color: #8951d7;
+    font-size: 16px;
+    font-weight: 400;
+}
+.date-container .time-container {
+    display: flex;
+    flex-direction: column;
+    margin: 1% 7% 1% 4%;
+    border-radius: 16px;
+    box-shadow: 0 1px 5px #dddddd;
+}
+.date-container .time-content {
+    margin: 0;
+    padding: 2% 6%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.date-container .time-content input {
+    position: static;
+    margin: 0;
+}
+.date-container .time-content label {
+    margin: 0 0 0 0;
+    padding: 0;
+    width: 75%;
+}
+.date-container .time-content img {
+    margin: 0;
+}
