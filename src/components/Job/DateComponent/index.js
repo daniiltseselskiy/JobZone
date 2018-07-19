@@ -7,12 +7,25 @@ import SaveButton from '../../../assets/images/job/save-button.png'
 import Slider from "react-slick";
 
 class DateComponent extends Component {
-    changeStaus = (checkBox) => {
-        if (checkBox.checked) {
-
+    constructor (props) {
+        super(props)
+        this.state = {
+            checkStatus: [false, false, false, false, false]
         }
+    }
+    changeStaus = (checkBox, i) => {
+        const items = this.state.checkStatus
+        items[i] = false
+        console.log(checkBox.checked)
+        if (checkBox.checked) {
+            
+            items[i] = true
+        }
+        this.setState({
+            checkStatus: items
+        })
+        console.log(this.state.checkStatus)
     } 
-
     render () { 
         return (
             <div className="date-container">
@@ -20,6 +33,7 @@ class DateComponent extends Component {
                     <Slider
                         infinite={true}
                         speed={100}
+                        arrows={false}
                         slidesToShow={5}
                         slidesToScroll={1}
                         centerMode={true}
@@ -55,27 +69,27 @@ class DateComponent extends Component {
                 </div>
                 <div className="time-container">
                     <div className="time-content" >
-                        <Input type="checkbox" onClick={() => this.changeStaus(this)}/>
+                        <Input type="checkbox" onChange={() => this.changeStaus(this, 0)}/>
                         <Label>9:00am - 10:00am</Label>
                         <img src={ SaveButton } alt="Save Button"/>
                     </div>
                     <div className="time-content">
-                        <Input type="checkbox" />
+                        <Input type="checkbox" onClick={() => this.changeStaus(this, 1)}/>
                         <Label>9:00am - 10:00am</Label>
                         <img src={ SaveButton } alt="Save Button"/>
                     </div>
                     <div className="time-content">
-                        <Input type="checkbox" />
+                        <Input type="checkbox" onClick={() => this.changeStaus(this, 2)}/>
                         <Label>9:00am - 10:00am</Label>
                         <img src={ SaveButton } alt="Save Button"/>
                     </div>
                     <div className="time-content">
-                        <Input type="checkbox" />
+                        <Input type="checkbox" onClick={() => this.changeStaus(this, 3)}/>
                         <Label>9:00am - 10:00am</Label>
                         <img src={ SaveButton } alt="Save Button"/>
                     </div>
                     <div className="time-content">
-                        <input type="checkbox"/>
+                        <input type="checkbox" onClick={() => this.changeStaus(this, 4)}/>
                         <Label>9:00am - 10:00am</Label>
                         <img src={ SaveButton } alt="Save Button"/>
                     </div>

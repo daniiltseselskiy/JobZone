@@ -12,16 +12,19 @@
     align-items: center;
 }
 .date-container .days-container .slick-slider .slick-arrow {
-    
     display: flex !important;
     flex-direction: row;
     align-items: center;
-    display: block;
+    z-index: 1;
+    justify-content: center;
     height: 80%;
     width: 12%;
     box-shadow: 0 1px 5px #dddddd;
     border-radius: 16px;
     background-color: #ffffff;
+}
+.date-container .days-container .slick-slider .slick-arrow:before {
+    content: none;
 }
 .date-container .days-container .day-content {
     
