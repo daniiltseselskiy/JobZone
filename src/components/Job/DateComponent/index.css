@@ -37,30 +37,6 @@
     border-radius: 16px;
     background-color: #ffffff;
 }
-/* .date-container .days-container .arrow-content {
-    width: 10%;
-    padding: 1% 0%;
-    margin: 1% 2.5% 1% 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 1px 5px #dddddd;
-    border-radius: 16px;
-    background-color: #ffffff;
-} */
-/* .date-container .days-container .day-content {
-    width: 10%;
-    padding: 1% 0%;
-    margin: 1% 2.5% 1% 0;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    box-shadow: 0 1px 5px #dddddd;
-    border-radius: 16px;
-    background-color: #ffffff;
-} */
 .date-container .days-container .day-content label:nth-child(1) {
     margin: 0;
     padding: 0;
@@ -88,7 +64,7 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: left;
 }
 .date-container .time-content input {
     position: static;
@@ -96,9 +72,17 @@
 }
 .date-container .time-content label {
     margin: 0 0 0 0;
-    padding: 0;
-    width: 75%;
+    padding: 0 5%;
+    width: 85%;
+}
+.date-container .time-content label.empa {
+    color: #252525;
+    font-size: 20px;
+    font-weight: 700;
 }
 .date-container .time-content img {
     margin: 0;
+}
+.date-container .time-container img:hover {
+    cursor: pointer;
 }
