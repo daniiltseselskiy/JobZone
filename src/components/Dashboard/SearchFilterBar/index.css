@@ -1,0 +1,23 @@
+.search-container {
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    padding: 3% 9%;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 1px 5px #dddddd;
+}
+.search-container .dropdown {
+    width: 15%;
+    padding: 0 1% 0 1%;
+    margin: 0;
+}
+.search-container .dropdown button {
+   
+    margin: 0;
+    min-width: 5rem;
+    background-color: #ffffff;
+    color: #000000;
+}

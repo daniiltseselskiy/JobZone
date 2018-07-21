@@ -1,0 +1,86 @@
+.right-message-container {
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 100%;
+    /* height: 30%; */
+    padding: 0 0 1% 0;
+    border-radius: 16px;
+    box-shadow: 0 1px 5px #dddddd;
+}
+.right-message-container .left-card {
+    width: 75%;
+    height: 100%;
+    padding-left: 4%;
+}
+.right-message-container .left-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0% 1%;
+    height: 45%;
+}
+.right-message-container .left-card .image-content {
+    
+}
+.right-message-container .left-card .label-content {
+    display: flex;
+    flex-direction: column;
+    padding: 7% 2%;
+    width: 70%;
+    justify-content: space-around;
+}
+.right-message-container .left-card .label-content label:nth-child(1) {
+    margin: 0;
+    color: #252525;
+    font-size: 20px;
+    font-weight: 700;
+}
+.right-message-container .left-card .label-content label:nth-child(2) {
+    margin: 0;
+    color: #252525;
+    font-size: 16px;
+    font-weight: 500;
+}
+.right-message-container .left-card .left-location-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 3% 0;
+}
+.right-message-container .left-card .left-location-container label {
+    padding: 0;
+    margin-left: 3%;
+    color: #8d8d8d;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+.right-message-container .right-card {
+    width: 25%;
+    /* height: 100%; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3% 0;
+}
+.right-message-container .right-card img {
+    cursor: pointer;
+}
+.right-message-container .right-card .scheduled {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 20%;
+}
+.right-message-container .right-card .scheduled label:nth-child(1) {
+    color: #8951d7;
+    font-size: 18px;
+    font-weight: 700;
+}
+.right-message-container .right-card .scheduled label:nth-child(2) {
+    color: #8d8d8d;
+    font-size: 18px;
+    font-weight: 400;
+}

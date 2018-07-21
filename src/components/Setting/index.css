@@ -1,0 +1,48 @@
+.setting-container {
+    width: 100%;
+}
+.setting-container .setting-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 31.1%;
+    margin: 3% auto 3% 20%;
+    padding: 4% 0;
+    border-radius: 16px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    -moz-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
+}
+.setting-container .setting-content .download-share-content {
+    padding: 5% 0;
+    width: 27%;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-around;
+
+}
+.setting-container .setting-content .setting-text-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 0 20%;
+    margin-top: 5%;
+    justify-content: space-between;
+    align-items: center;
+}
+.setting-container .setting-content .setting-text-container label {
+    padding: 0;
+}
+.setting-container .setting-content .setting-text-container img {
+
+}
+.setting-container .setting-content .signout-container {
+    width: 100%;
+    padding: 0 20%;
+    margin: 5% 0;
+}
+.setting-container .setting-content .signout-container label {
+    
+}

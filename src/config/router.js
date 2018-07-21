@@ -14,7 +14,9 @@ import Profile from '../containers/Profile'
 import Job from '../containers/Job'
 import CreateJob from '../containers/CreateJob'
 import EditJob from '../containers/EditJob'
-
+import Dashboard from '../containers/Dashboard'
+import Message from '../containers/Message'
+import Setting from '../containers/Setting'
 class RouterComponent extends Component {
     render () {
         return (
@@ -29,6 +31,9 @@ class RouterComponent extends Component {
                     <Route path="/job" component={Job} />
                     <Route path="/create-job" component={CreateJob} />
                     <Route path="/edit-job" component={EditJob} />
+                    <Route path="/dashboard" component={Dashboard} />
+                    <Route path="/message" component={Message} />
+                    <Route path="/setting" component={Setting} />
                     <Route path="/" component={Homepage} />
                 </Switch>
                 <Footers />

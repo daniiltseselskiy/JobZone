@@ -22,7 +22,6 @@ class ProfileContainer extends Component {
             </div>
         )
     }
-
 }
 
 const mapStateToProps = (state, ownProps) => {

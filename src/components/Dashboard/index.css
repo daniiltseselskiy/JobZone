@@ -1,0 +1,11 @@
+.dashboard-content {
+    width: 100%;
+    padding: 3% 7%;
+}
+.dashboard-content .job-position-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 80%;
+    padding-top: 4%;
+}
