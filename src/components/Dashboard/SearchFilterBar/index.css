@@ -9,15 +9,20 @@
     border-radius: 16px;
     box-shadow: 0 1px 5px #dddddd;
 }
-.search-container .dropdown {
-    width: 15%;
-    padding: 0 1% 0 1%;
-    margin: 0;
+.search-container .Dropdown-root {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    width: 17%;
 }
-.search-container .dropdown button {
-   
-    margin: 0;
-    min-width: 5rem;
-    background-color: #ffffff;
-    color: #000000;
+.search-container .Dropdown-root .Dropdown-control {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #d1d1d3;
+}
+.search-container .Dropdown-root .Dropdown-control .Dropdown-placeholder {
+    color: #bcbcbc;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: -0.18px;
 }

@@ -134,3 +134,6 @@
 .liheader-container label {
     margin-bottom: 0px;
 }
+.liheader-container nav div img {
+    margin-left: 2rem;
+}

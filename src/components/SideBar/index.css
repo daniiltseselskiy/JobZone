@@ -1,18 +1,25 @@
 .sidebar-container {
     padding: 0 1%;
     text-align: center;
+   
 }
 .sidebar-component {
     padding-top: 3rem;
     padding-bottom: 1rem;
+   
+    
+}
+.sidebar-component a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    
+    text-decoration: none;
 }
-
-.sidebar-component img:hover {
+.sidebar-component a:hover {
     cursor: pointer;
+}
+.sidebar-component img:hover {
+    
 }
 .sidebar-component label {
     margin-top: 1.3rem;

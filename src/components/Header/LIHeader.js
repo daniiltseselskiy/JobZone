@@ -48,13 +48,13 @@ class LIHeader extends Component {
                     <Label>
                         Hello, Name
                     </Label>
-                    <div><img src={UserIcon} alt="avatar icon" /></div>
+                    
                     <Dropdown isOpen={this.state.dropdownOpen} toggle={this.toggle}>
                         <DropdownToggle
                             tag="span"
                             data-toggle="dropdown"
                         >
-                            <img src={NotificationIcon} alt="avatar icon" />
+                            <img src={UserIcon} alt="avatar icon" />
                         </DropdownToggle>
                         <DropdownMenu right className="dropdown-menu">
                             <DropdownItem>Profile</DropdownItem>
@@ -62,6 +62,7 @@ class LIHeader extends Component {
                             <DropdownItem>Log Out</DropdownItem>
                         </DropdownMenu>
                     </Dropdown>
+                    <div><img src={NotificationIcon} alt="avatar icon" /></div>
                 </Navbar>
             </Container>
         ) 

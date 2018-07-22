@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Label } from 'reactstrap'
-import SideBar from '../SideBar'
+import SideBar from '../../containers/SideBar'
 import './index.css'
 
 class DashboardContainer extends Component {

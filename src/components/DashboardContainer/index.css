@@ -7,9 +7,13 @@
 }
 
 .dashboard-container .sidebar-content {
-    margin: 0;
+    margin: 0 0 0 0;
     width: 234px;
     background-color: #ffffff;
+    -webkit-box-shadow: inset 0px 3px 17px -2px rgba(0,0,0,0.35);
+    -moz-box-shadow: inset 0px 3px 17px -2px rgba(0,0,0,0.35);
+    box-shadow: inset 0px 3px 17px -2px rgba(0,0,0,0.35);
+
     
 }
 .dashboard-container .content-container {
