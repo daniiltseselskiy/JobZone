@@ -20,13 +20,15 @@ class LogIn extends Component {
                             <Input type="password" name="password" id="signinPassword" placeholder="Password" />
                         </FormGroup>                    
                         <FormGroup check>
-                            <Link to="/">Forgot Password</Link>
+                            <Link to="/forgotpassword">Forgot Password?</Link>
                         </FormGroup>
-                        <img className="one-image-button" src={ SignInButton } alt="Continue Button" />
+                        <Link to="/dashboard">
+                            <img className="one-image-button" src={ SignInButton } alt="Continue Button" />
+                        </Link>
                     </Form>
                     <Label className="label-bottom-link">
                         Need an account?{' '}
-                        <Link to="/log-in">Sign Up</Link>
+                        <Link to="/sign-up">Sign Up</Link>
                     </Label>
                 </Container>
             </AuthContainer>

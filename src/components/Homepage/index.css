@@ -180,3 +180,19 @@
         right: 42%;
     }
 }
+@media screen and (max-width: 768px) {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
+        font-size: 78px;
+    }
+    .home-page-container .row.home-panel .col-lg-6 .left-text  p {
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 650px) {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
+        font-size: 50px;
+    }
+    .home-page-container .row.home-panel .col-lg-6 .left-text  p {
+        font-size: 20px;
+    }
+}

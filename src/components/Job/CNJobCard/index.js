@@ -1,5 +1,8 @@
 import React, { Component } from 'react'
 import { Container, Label , Input} from 'reactstrap'
+import DatePicker from 'react-datepicker'
+import moment from 'moment';
+import 'react-datepicker/dist/react-datepicker.css';
 import './index.css'
 import JobImage from '../../../assets/images/job/job-image.png'
 import TitleIcon from '../../../assets/images/job/title-icon.png'
@@ -86,7 +89,8 @@ class CNJobCard extends Component {
                     </Container>
                     <Container className="cnjob-container-image-input">
                         <img src={ DateIcon } alt="Date Icon" />
-                        {this.renderInputByEditable("9:00am-18:00pm", "")}
+                        {/* {this.renderInputByEditable("9:00am-18:00pm", "")} */}
+                        <DatePicker />
                     </Container>
                     <Container className="cnjob-container-day">
                         <Label>Mon</Label>

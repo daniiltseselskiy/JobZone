@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 import { Container, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import './index.css'
 import {
@@ -57,12 +58,12 @@ class LIHeader extends Component {
                             <img src={UserIcon} alt="avatar icon" />
                         </DropdownToggle>
                         <DropdownMenu right className="dropdown-menu">
-                            <DropdownItem>Profile</DropdownItem>
-                            <DropdownItem>Settings</DropdownItem>
-                            <DropdownItem>Log Out</DropdownItem>
+                            <Link to="/profile"><DropdownItem>Profile</DropdownItem></Link>
+                            <Link to="/setting"><DropdownItem>Settings</DropdownItem></Link>
+                            <Link to="/log-in"><DropdownItem>Log Out</DropdownItem></Link>
                         </DropdownMenu>
                     </Dropdown>
-                    <div><img src={NotificationIcon} alt="avatar icon" /></div>
+                    <div><img src={NotificationIcon} alt="notification icon" /></div>
                 </Navbar>
             </Container>
         ) 

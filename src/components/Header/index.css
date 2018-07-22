@@ -96,6 +96,9 @@
 .liheader-container nav .dropdown .dropdown-menu {
     margin-top: 10px;
 }
+.liheader-container nav .dropdown .dropdown-menu a {
+    text-decoration: none;
+}
 .liheader-container .input-group {
     width: 50%;
     margin-left: 8%;

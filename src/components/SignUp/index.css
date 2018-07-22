@@ -126,6 +126,9 @@
     font-weight: 400;
     letter-spacing: -0.16px;
 }
+.verification-code-container .middle-container h6:hover {
+    cursor: pointer;
+}
 .verification-code-container .middle-container img.one-image-button {
     margin-top: 180px;
 }

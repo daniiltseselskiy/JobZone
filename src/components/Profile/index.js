@@ -46,7 +46,7 @@ class Profile extends Component {
                     </Col>
                     <Col lg="10" className="content-container">
                         <Row>
-                            <Col lg="8" >
+                            <Col xl="8" lg="12" md="12">
                                 <Container className="profile-content-container">
                                     <Form>
                                         <Container className="top-profile-content">
@@ -92,7 +92,7 @@ class Profile extends Component {
                                     </Form>
                                 </Container>
                             </Col>
-                            <Col lg="3">
+                            <Col xl="4" lg="12" md="12">
                                 <Container className="member-content-container">
                                     <Form>
                                         <Container>
@@ -103,11 +103,11 @@ class Profile extends Component {
                                             {this.renderItem(isEditMember, "Member Name", "Member Name", true)}
                                             {this.renderItem(isEditMember, "Position", "Position", true)}
                                         </Container>
-                                        <Container>
+                                        <Container className="image-input-container">
                                             <img src={ EmailIcon } alt="Email Icon" />
                                             {this.renderItem(isEditMember, "Loremipsum@gmail.com", "Email", true)}
                                         </Container>
-                                        <Container>
+                                        <Container className="image-input-container">
                                             <img src={ PhoneIcon } alt="Phone Icon" />
                                             {this.renderItem(isEditMember, "+1 818 789 897", "Phone Mumber", true)}
                                         </Container>

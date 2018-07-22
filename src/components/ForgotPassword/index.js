@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import { Container, Row , Col, Input } from 'reactstrap'
+import { Container, Row , Col, Input, Label } from 'reactstrap'
 import PinBox from 'react-pin-input'
 import BackButton from '../../assets/images/authcontainer/back-button.png';
 import BackgroundImage from '../../assets/images/authcontainer/auth-image.png';
@@ -33,7 +33,7 @@ class ForgotPassword extends Component {
                             onComplete={(value, index) => {}}
                         />
                         <h5>00:30</h5>
-                        <h6>Resent Code</h6>
+                        <Label>Resent Code</Label>
                         <img src={BackButton} alt="Back Button" />
                     </div>
                 </Container>
