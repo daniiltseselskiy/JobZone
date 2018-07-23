@@ -12,6 +12,7 @@ const reducer = (state = initialState, action ) => {
 
     switch( action.type ) {
         case CHANGE_SIDEBAR_STATUS:
+            
             newState.sideBarStatus = action.sideBarStatus
             return newState
         default:

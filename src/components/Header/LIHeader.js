@@ -67,6 +67,10 @@ class LIHeader extends Component {
             }
         )
     }
+    onLogout = () => {
+        const { changeLoggedStatus} = this.props
+        changeLoggedStatus()
+    }
     render () {
         return (
             <Container className="liheader-container">
@@ -92,7 +96,7 @@ class LIHeader extends Component {
                         <DropdownMenu right className="dropdown-menu">
                             <Link to="/profile"><DropdownItem>Profile</DropdownItem></Link>
                             <Link to="/setting"><DropdownItem>Settings</DropdownItem></Link>
-                            <Link to="/log-in"><DropdownItem>Log Out</DropdownItem></Link>
+                            <Link to="/"><DropdownItem onClick={this.onLogout}>Log Out</DropdownItem></Link>
                         </DropdownMenu>
                     </Dropdown>
                     

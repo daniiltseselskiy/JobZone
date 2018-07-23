@@ -5,8 +5,9 @@ import LIHeader from './LIHeader'
 
 class Header extends Component {
     renderHeader = (isLoggedIn) => {
+        const { changeLoggedStatus } = this.props
         if ( isLoggedIn ) {
-            return <LIHeader />
+            return <LIHeader changeLoggedStatus={changeLoggedStatus}/>
         } else {
             return <NLIHeader />
         }

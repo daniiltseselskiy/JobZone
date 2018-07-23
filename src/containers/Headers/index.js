@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import { withRouter } from 'react-router-dom';
 import Header from '../../components/Header';
 import { connect } from 'react-redux';
-
+import {
+    changeLoggedStatus
+} from '../../actions/Auth'
 class HeaderContainer extends Component {
     constructor (props) {
         super(props)
@@ -30,7 +32,11 @@ const mapStateToProps = (state, ownProps) => {
 }
 
 const mapDispatchToProps = (dispatch, ownProps) => {
-    return {}
+    return {
+        changeLoggedStatus:isLoggedIn => {
+            dispatch(changeLoggedStatus(isLoggedIn))
+        }
+    }
 }
 
 export default withRouter(connect(mapStateToProps, mapDispatchToProps)(HeaderContainer));
