@@ -1,15 +1,18 @@
 import { combineReducers } from 'redux'
 import Auth from './Auth';
-import homepage from './homepage';
-import profile from './Profile';
+import Homepage from './Homepage';
+import Profile from './Profile';
 import Job from './Job';
 import SideBar from './SideBar'
+import Message from './Message'
+
 const RootReducer = combineReducers({
     Auth,
-    homepage,
-    profile,
+    Homepage,
+    Profile,
     Job,
     SideBar,
+    Message,
 });
 
 export default RootReducer;

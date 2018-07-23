@@ -13,8 +13,19 @@
 .auth-container .row .col-lg-6.left-logo-image {
     height: 100vh;
     text-align: center;
-    padding-top: 165px;
+    padding-top: 10%;
 }
 .auth-container .row .col-lg-6.left-logo-image img {
     
+}
+@media screen and (max-width:1200px) {
+    .auth-container .row .col-lg-6.left-logo-image {
+        padding-top: 20%;
+    }
+}
+@media screen and (max-width: 375px) {
+    .auth-container .row .col-lg-6.left-logo-image {
+        padding-top: 10%;
+    }
+
 }

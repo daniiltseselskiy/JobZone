@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import NotificationItem from './NotificationItem'
 import { Link } from 'react-router-dom'
 import { Container, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import './index.css'
@@ -24,8 +25,22 @@ class LIHeader extends Component {
     constructor (props) {
         super(props)
         this.toggle = this.toggle.bind(this)
+        this.toggle1 = this.toggle1.bind(this)
         this.state = {
-            dropdownOpen: false
+            dropdownOpen: false,
+            dropdownOpen1: false,
+            itemsNotification: [
+                {
+                    avatar: UserIcon,
+                    message: "I am a message",
+                    time: "5 min"
+                },
+                {
+                    avatar: UserIcon,
+                    message: "I am a message",
+                    time: "5 min"
+                }
+            ]
         }
     }
     
@@ -34,7 +49,24 @@ class LIHeader extends Component {
           dropdownOpen: !prevState.dropdownOpen
         }));
     }
+    toggle1() {
+        this.setState(prevState => ({
+          dropdownOpen1: !prevState.dropdownOpen1
+        }));
+    }
 
+    renderItem = (itemsNotification) => {
+        return itemsNotification.map (
+            (item, key) => {
+                return (
+                    <NotificationItem 
+                        item={item}
+                        key={key}
+                    />
+                )
+            }
+        )
+    }
     render () {
         return (
             <Container className="liheader-container">
@@ -63,7 +95,18 @@ class LIHeader extends Component {
                             <Link to="/log-in"><DropdownItem>Log Out</DropdownItem></Link>
                         </DropdownMenu>
                     </Dropdown>
-                    <div><img src={NotificationIcon} alt="notification icon" /></div>
+                    
+                    <Dropdown isOpen={this.state.dropdownOpen1} toggle={this.toggle1}>
+                        <DropdownToggle
+                            tag="span"
+                            data-toggle="dropdown"
+                        >
+                            <img src={NotificationIcon} alt="avatar icon" />
+                        </DropdownToggle>
+                        <DropdownMenu right className="dropdown-menu notification">
+                            {this.renderItem(this.state.itemsNotification)}
+                        </DropdownMenu>
+                    </Dropdown>
                 </Navbar>
             </Container>
         ) 

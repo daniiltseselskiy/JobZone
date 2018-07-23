@@ -3,6 +3,7 @@ import { Container, Row , Col, Input, Label } from 'reactstrap'
 import PinBox from 'react-pin-input'
 import BackButton from '../../assets/images/authcontainer/back-button.png';
 import BackgroundImage from '../../assets/images/authcontainer/auth-image.png';
+import LogoImage from '../../assets/images/header/logo.png'
 import './index.css'
 import AuthContainer from '../AuthContainer'
 const Style = {
@@ -19,6 +20,7 @@ class ForgotPassword extends Component {
         return (
             <AuthContainer BackgroundImage={BackgroundImage}>
                 <Container className="forgot-password-container">
+                   
                     <h1>Forgot Password</h1>
                     <div className="middle-container">
                         <p>We send to you  verify code to this number</p>
@@ -33,7 +35,7 @@ class ForgotPassword extends Component {
                             onComplete={(value, index) => {}}
                         />
                         <h5>00:30</h5>
-                        <Label>Resent Code</Label>
+                        <h6>Resent Code</h6>
                         <img src={BackButton} alt="Back Button" />
                     </div>
                 </Container>

@@ -196,3 +196,9 @@
         font-size: 20px;
     }
 }
+@media screen and (max-width: 375px) {
+    .home-page-container .row.home-panel .col-lg-6 .left-text  h1 {
+        font-size: 40px;
+    }
+    
+}

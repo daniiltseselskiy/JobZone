@@ -44,5 +44,17 @@
     margin: 5% 0;
 }
 .setting-container .setting-content .signout-container label {
-    
+        
+}
+
+@media screen and (max-width: 1200px) {
+    .setting-container .setting-content {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .setting-container .setting-content {
+        width: 90%;
+        margin: 10% auto;
+    }
 }

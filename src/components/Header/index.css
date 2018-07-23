@@ -96,6 +96,9 @@
 .liheader-container nav .dropdown .dropdown-menu {
     margin-top: 10px;
 }
+.liheader-container nav .dropdown .dropdown-menu.notification {
+    width: 20rem;
+}
 .liheader-container nav .dropdown .dropdown-menu a {
     text-decoration: none;
 }
@@ -139,4 +142,21 @@
 }
 .liheader-container nav div img {
     margin-left: 2rem;
+}
+
+@media screen and (max-width: 375px) {
+    .liheader-container .input-group {
+        margin-left: 0;
+        padding-left: 0;
+        width: 100%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .liheader-container .input-group {
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .liheader-container .input-group .input-group-prepend img {
+        margin-left: 5px;
+    }
 }

@@ -1,17 +1,18 @@
 import _ from 'lodash'
-
-import { REDIRECT_SIDEBAR_TAP } from '../../constants/actionTypes'
+import {
+    CHANGE_SIDEBAR_STATUS
+} from '../../constants/actionTypes'
 
 const initialState = {
-    sidebarState: 1,
+   sideBarStatus: 1
 }
 
 const reducer = (state = initialState, action ) => {
     let newState = _.cloneDeep(state)
 
     switch( action.type ) {
-        case REDIRECT_SIDEBAR_TAP:
-            newState.sidebarState = action.sidebarState;
+        case CHANGE_SIDEBAR_STATUS:
+            newState.sideBarStatus = action.sideBarStatus
             return newState
         default:
             return state;

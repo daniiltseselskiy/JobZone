@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Message from '../../components/Message' 
-
+import {
+    changeMessagePanelStatus
+} from '../../actions/message'
 class MessageContainer extends Component {
     constructor (props) {
         super(props)
@@ -13,7 +15,7 @@ class MessageContainer extends Component {
     render () {
         return (
             <div className="message-page">
-                <Message />
+                <Message  {...this.props}/>
             </div>
         )
     }
@@ -22,13 +24,15 @@ class MessageContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        messagePanelStatus: state.Message.messagePanelStatus
     };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        
+        changeMessagePanelStatus: () => {
+            dispatch(changeMessagePanelStatus());
+        }
     };
 }
 

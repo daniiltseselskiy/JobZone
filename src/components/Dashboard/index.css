@@ -9,3 +9,15 @@
     width: 80%;
     padding-top: 4%;
 }
+
+@media screen and (max-width: 768px) {
+    .dashboard-content .job-position-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .dashboard-content {
+        padding: 3% 2%;
+    }
+}

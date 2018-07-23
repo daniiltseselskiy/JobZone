@@ -12,12 +12,12 @@ class DateComponent extends Component {
             <div className="date-container">
                 <div className="days-container">
                     <Slider
-                        infinite={true}
+                        infinite={false}
                         speed={100}
                         arrows={false}
-                        slidesToShow={5}
+                        slidesToShow={7}
                         slidesToScroll={1}
-                        centerMode={true}
+                        centerMode={false}
                         arrows={true}
                         prevArrow={<div className="arrow-content"><img src={BackArrow} alt="Back Arrow"/></div>}
                         nextArrow={<div className="arrow-content"><img src={NextArrow} alt="Next Arrow"/></div>}
@@ -45,6 +45,14 @@ class DateComponent extends Component {
                         <div className="day-content">
                             <Label>Sat</Label>
                             <Label>Jun30</Label>
+                        </div>
+                        <div className="day-content">
+                            <Label>Sun</Label>
+                            <Label>July1</Label>
+                        </div>
+                        <div className="day-content">
+                            <Label>Mon</Label>
+                            <Label>July2</Label>
                         </div>
                     </Slider>
                 </div>

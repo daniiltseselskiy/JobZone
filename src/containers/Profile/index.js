@@ -26,8 +26,8 @@ class ProfileContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        isEditProfile: state.profile.isEditProfile,
-        isEditMember: state.profile.isEditMember
+        isEditProfile: state.Profile.isEditProfile,
+        isEditMember: state.Profile.isEditMember
     };
 };
 

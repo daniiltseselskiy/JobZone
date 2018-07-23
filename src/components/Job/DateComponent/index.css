@@ -6,6 +6,9 @@
     width: 80%;
     margin: 0 auto;
 }
+.date-container .days-container .slick-slider .slick-list {
+    padding: 2% 0;
+}
 .date-container .days-container .slick-slider .slick-list .slick-track {
     display: flex;
     flex-direction: row;
@@ -85,4 +88,16 @@
 }
 .date-container .time-container img:hover {
     cursor: pointer;
+}
+
+@media screen and (max-width: 500px) {
+    .date-container .days-container .day-content label:nth-child(1) {
+        font-size: 16px;
+    }
+    .date-container .days-container .day-content label:nth-child(2) {
+        font-size: 12px;
+    }
+    .date-container .days-container .day-content {
+        border-radius: 7px;
+    }
 }

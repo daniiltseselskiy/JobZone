@@ -1,9 +1,10 @@
-import  { REDIRECT_SIDEBAR_TAP } from '../constants/actionTypes'
+import {
+    CHANGE_SIDEBAR_STATUS
+} from '../constants/actionTypes'
 
-export function onChangeSidebarState(sidebarState) {
-    console.log(sidebarState)
-    return {
-        type: REDIRECT_SIDEBAR_TAP,
-        sidebarState
+export function changeSideBarStatus (sideBarStatus) {
+    return { 
+        type: CHANGE_SIDEBAR_STATUS,
+        sideBarStatus
     }
 }

@@ -7,7 +7,12 @@ import SignInButton from '../../assets/images/authcontainer/sign-in-button.png'
 import BackgroundImage from '../../assets/images/authcontainer/auth-image.png';
 
 class LogIn extends Component {
+    SignIn = () => {
+        const { isLoggedIn, changeLoggedStatus } = this.props
+        changeLoggedStatus()
+    }
     render () {
+        
         return (
             <AuthContainer BackgroundImage={BackgroundImage}>
                 <Container className="login-container">
@@ -23,7 +28,7 @@ class LogIn extends Component {
                             <Link to="/forgotpassword">Forgot Password?</Link>
                         </FormGroup>
                         <Link to="/dashboard">
-                            <img className="one-image-button" src={ SignInButton } alt="Continue Button" />
+                            <img className="one-image-button" src={ SignInButton } alt="Continue Button" onClick={this.SignIn}/>
                         </Link>
                     </Form>
                     <Label className="label-bottom-link">

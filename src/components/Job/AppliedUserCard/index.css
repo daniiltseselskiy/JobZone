@@ -97,3 +97,13 @@
     font-size: 18px;
     font-weight: 400;
 }
+@media screen and (min-width: 768ox) {
+    .applied-user-card-content .right-card img {
+        width: 57%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .applied-user-card-content .right-card img {
+        width: 70%;
+    }
+}

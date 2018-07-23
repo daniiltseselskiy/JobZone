@@ -131,3 +131,10 @@
     top: 22%;
     cursor: pointer;
 }
+
+@media screen and (max-width: 1200px) {
+    .cnjob-container {
+        width: 90%;
+        margin: 2rem auto 5% auto;
+    }
+}

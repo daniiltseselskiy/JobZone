@@ -6,6 +6,10 @@ import ContinueButton from '../../assets/images/authcontainer/continue-button.pn
 
 
 class FirstStep extends Component {
+    changeSignUpStep = () => {
+        const { changeSignUpStep } = this.props
+        changeSignUpStep(2)
+    }
     render () {
         return (
             <Container className="signup-container">
@@ -26,7 +30,7 @@ class FirstStep extends Component {
                                 <Link to="/">Privacy Policy</Link>
                         </Label>
                     </FormGroup>
-                    <img className="one-image-button" src={ ContinueButton } alt="Continue Button" />
+                    <img className="one-image-button" src={ ContinueButton } alt="Continue Button" onClick={this.changeSignUpStep}/>
                 </Form>
                 <Label className="label-bottom-link">
                     Do you have an account?{' '}

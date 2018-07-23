@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SignUp from '../../components/SignUp';
-
+import {
+    changeSignUpStep
+} from '../../actions/Auth'
 class SignUpContainer extends Component {
     constructor (props) {
         super(props)
@@ -29,7 +31,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        
+        changeSignUpStep: signUpStep => {
+            dispatch(changeSignUpStep(signUpStep))
+        }
     };
 }
 

@@ -11,13 +11,14 @@ import VerificationInProgress from './VerificationInProgress'
 class SingUp extends Component {
 
     renderStep = (currentStep) => {
+        
         switch(currentStep) {
             case 1:
-                return <AuthContainer BackgroundImage={BackgroundImage}><FirstStep /></AuthContainer>;
+                return <AuthContainer BackgroundImage={BackgroundImage}><FirstStep {...this.props}/></AuthContainer>;
             case 2:
-                return <AuthContainer BackgroundImage={BackgroundImage}><SecondStep /></AuthContainer>;
+                return <AuthContainer BackgroundImage={BackgroundImage}><SecondStep {...this.props}/></AuthContainer>;
             case 3:
-                return <AuthContainer BackgroundImage={BackgroundImage}><ThirdStep /></AuthContainer>;
+                return <AuthContainer BackgroundImage={BackgroundImage}><ThirdStep {...this.props}/></AuthContainer>;
             case 4:
                 return <VerificationInProgress />
             default:

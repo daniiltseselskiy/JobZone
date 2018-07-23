@@ -7,14 +7,14 @@ class DashboardContainer extends Component {
     render () {
         const { isProfile } = this.props
         return (
-            <Container className="dashboard-container">
-                <Container className="sidebar-content">
+            <div className="dashboard-container">
+                <div className="sidebar-content">
                     <SideBar isProfile={ this.isProfile } /> 
-                </Container>
-                <Container className="content-container">
+                </div>
+                <div className="content-container">
                     {this.props.children}
-                </Container>
-            </Container>
+                </div>
+            </div>
         )
     }
 }

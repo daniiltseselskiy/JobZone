@@ -36,3 +36,11 @@
     margin-top: 7px;
     margin-left: 45px;
 }
+
+@media screen and (max-width: 375px) {
+    .reset-password-container .bottom-container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+}

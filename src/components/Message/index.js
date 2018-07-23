@@ -9,37 +9,36 @@ import BackButton from '../../assets/images/message/back-button.png'
 
 class Message extends Component {
     constructor(props) {
-        super(props)
-        this.onClickBack = this.onClickBack.bind(this)
-        this.state = {
-            isCandidateList: false
-        }
+        super(props)     
+        
     }
-    onClickBack () {
-        this.setState({
-            isCandidateList: true
-        })
+    changeMessagePanelStatus = () => {
+        const { changeMessagePanelStatus } = this.props
+        changeMessagePanelStatus()
     }
-    renderItem () {
-        if ( this.state.isCandidateList ) {
-            return <CandidateList/>
+    renderItem (messagePanelStatus) {
+        const { changeMessagePanelStatus } = this.props
+        if ( messagePanelStatus ) {
+            return <CandidateList changeMessagePanelStatus = {changeMessagePanelStatus}/>
         } else {
             return <MessagePanel/>
         }
     }
-    renderTitle () {
-        if ( this.state.isCandidateList ) {
+    renderTitle (messagePanelStatus) {
+        
+        if ( messagePanelStatus ) {
             return <div className="back-list">
                         <Label>Candidate List</Label>
                     </div>
         } else {
             return <div className="back-list">
-                        <img src={BackButton} alt="Back Button" onClick={this.onClickBack}/>
+                        <img src={BackButton} alt="Back Button" onClick={this.changeMessagePanelStatus}/>
                         <Label>Back to Candidate list</Label>
                     </div>
         }
     }
     render () {
+        const { messagePanelStatus } = this.props;
         return (
             <DashboardContainer isProfile={ true }>
                 <div className="message-container">
@@ -48,11 +47,14 @@ class Message extends Component {
                         <LeftJobComponent />
                     </div>
                     <div className="message-right-panel">
-                        { this.renderTitle()}
+                        { this.renderTitle(messagePanelStatus)}
                         <div className="panel-container">
-                            {this.renderItem()}
+                            {this.renderItem(messagePanelStatus)}
                         </div>
-                        
+                        <div className="message-conversation-panel">
+                            <div className="message-box">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </DashboardContainer>

@@ -84,3 +84,23 @@
     font-size: 18px;
     font-weight: 400;
 }
+
+@media screen and (min-width: 768ox) {
+    .right-message-container .right-card img {
+        width: 57%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .right-message-container .right-card img {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 375px ) {
+    .right-message-container .left-card .label-content label:nth-child(1) {
+        font-size: 16px;
+    }
+    .right-message-container .left-card .label-content label:nth-child(2) {
+        font-size: 12px;
+    }
+}

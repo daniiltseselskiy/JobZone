@@ -53,18 +53,21 @@ class JobDetail extends Component {
         return (
             <div className="job-detail-container">
                 <div className="job-memo">
-                    <div className="job-company-container">
-                        <img src={ JobImage } alt="Job Image" />
-                        <Label>Job Position</Label>
-                        <Label>Company Name</Label>
-                    </div>
-                    <div className="edit-delete-button">
-                        <img src={EditButton} alt="Edit Button" />
-                        <img src={DeleteButton} alt="Delete Button" />
-                    </div>
-                    <div className="active-applicants-container">
-                        <img src={ActiveButton} alt="Active Button"/>
-                        <Label>2 applicants</Label>
+                    <img className="job-image" src={ JobImage } alt="Job Image" />
+                    <div className="job-memo-content">
+                        <div className="job-company-container">
+                            
+                            <Label>Job Position</Label>
+                            <Label>Company Name</Label>
+                        </div>
+                        <div className="edit-delete-button">
+                            <img src={EditButton} alt="Edit Button" />
+                            <img src={DeleteButton} alt="Delete Button" />
+                        </div>
+                        <div className="active-applicants-container">
+                            <img src={ActiveButton} alt="Active Button"/>
+                            <Label>2 applicants</Label>
+                        </div>
                     </div>
                 </div>
                 <div className="job-detail-content">

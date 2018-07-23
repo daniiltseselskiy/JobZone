@@ -6,8 +6,6 @@
 .sidebar-component {
     padding-top: 3rem;
     padding-bottom: 1rem;
-   
-    
 }
 .sidebar-component a {
     display: flex;
@@ -43,5 +41,11 @@
     .sidebar-container img.post-image {
         margin-bottom: 4%;
         width: 184px;
+    }
+}
+@media screen and (max-width: 883px) {
+    .sidebar-container {
+        flex-direction: row;
+        display: flex;
     }
 }

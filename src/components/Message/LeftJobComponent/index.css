@@ -53,3 +53,9 @@
     font-weight: 500;
     line-height: 22px;
 }
+
+@media screen and (max-width: 1210px) {
+    .left-job-container {
+       
+    }
+}

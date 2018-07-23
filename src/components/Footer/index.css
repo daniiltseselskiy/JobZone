@@ -60,3 +60,9 @@
  .footer-container .footer-body .row .col-md-12 p {
      padding-left: 1rem;
  }
+
+ @media screen and (max-width: 1200px) {
+    .footer-container .footer-body {
+        width: 70%;
+    }
+ }

@@ -29,18 +29,18 @@
     letter-spacing: -0.16px;    
     
 }
-.forgot-password-container .middle-container label {
+.forgot-password-container .middle-container h6 {
     margin-top: 20px;
     color: #8951d7;
     font-size: 14px;
     font-weight: 400;
     letter-spacing: -0.16px;
 }
-.forgot-password-container .middle-container label:hover {
+.forgot-password-container .middle-container h6:hover {
     cursor: pointer;
 }
 .forgot-password-container .middle-container img {
-    margin-top: 180px;
+    margin-top: 20%;
 }
 .forgot-password-container .middle-container img:hover {
     cursor: pointer;

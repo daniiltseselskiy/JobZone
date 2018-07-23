@@ -6,6 +6,16 @@ import ContinueButton from '../../assets/images/authcontainer/continue-button.pn
 import BackButton from '../../assets/images/authcontainer/back-button.png'
 
 class SecondStep extends Component {
+    backSignUpStep = () => {
+        const { signUpStep , changeSignUpStep } = this.props
+        const step = signUpStep - 1
+        changeSignUpStep(step)
+    }
+    forwardSignUpStep = () => {
+        const { signUpStep , changeSignUpStep } = this.props
+        const step = signUpStep + 1
+        changeSignUpStep(step)
+    }
     render () {
         return (
             <Container className="signup-container">
@@ -21,8 +31,8 @@ class SecondStep extends Component {
                         <Input type="text" name="location" id="signupLocation" placeholder="Location" />
                     </FormGroup>          
                     <Container className="stepper-container">
-                        <img src={BackButton} alt="Back Button" />
-                        <img src={ ContinueButton } alt="Continue Button" />
+                        <img src={BackButton} alt="Back Button" onClick={this.backSignUpStep}/>
+                        <img src={ ContinueButton } alt="Continue Button" onClick={this.forwardSignUpStep}/>
                     </Container>         
                     
                 </Form>

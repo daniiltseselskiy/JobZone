@@ -12,8 +12,11 @@
 
 .signup-container form {
     width: 60%;
-    margin: 60px 20% 0 20%;
+    margin: 60px auto 0 auto;
     text-align: start;
+}
+.signup-container form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 .signup-container form input.form-control {
     margin-top: 60px;
@@ -34,11 +37,14 @@
     color: #888888;
     letter-spacing: -0.16px;
 }
+.signup-container form .form-check .form-check-label input {
+    margin-top: -3px;
+}
 .signup-container form .form-check .form-check-label a {
     font-weight: 700;
     color: #252525;
 }
-.signup-container form input::placeholder {
+.signup-container form input, input::placeholder {
     color: #bcbcbc;
     font-size: 14px;
     font-weight: 400;
@@ -60,7 +66,7 @@
 .signup-container label.label-bottom-link {
     color: #888888;
     margin-bottom: 0;
-    margin-top: 50px;
+    margin-top: 10%;
     font-size: 18px;
     font-weight: 400;
     letter-spacing: -0.21px;
@@ -72,6 +78,14 @@
     letter-spacing: -0.21px;
     border-style: none;
     background: transparent;
+}
+@media screen and (max-width: 1200px) {
+    .signup-container form {
+        width: 90%;
+    }
+    .signup-container form .form-check .form-check-label {
+        font-size: 16px;
+    }
 }
 /* Second Step CSS */
 .signup-container form .stepper-container {
@@ -86,6 +100,11 @@
 }
 .signup-container form .stepper-container img:nth-child(2) {
     margin: 0 0 0 5%;
+}
+@media screen and (max-width: 375px) {
+    .signup-container form .stepper-container {
+        justify-content: space-around;
+    }
 }
 /* //////////////////////////////////////////// Verification Code CSS ///////////////////////////////////////////////////// */
 .verification-code-container .stepper-container {
@@ -130,7 +149,7 @@
     cursor: pointer;
 }
 .verification-code-container .middle-container img.one-image-button {
-    margin-top: 180px;
+    margin-top: 20%;
 }
 .verification-code-container .middle-container img:hover {
     cursor: pointer;
@@ -201,6 +220,7 @@
         width: 82px !important;
         height: 107px !important;
     }
+   
 }
 
 /* /////////////////////////////////////  Verification In Progress //////////////////////////////////////// */

@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import LogIn from '../../components/LogIn'
-
+import {
+    changeLoggedStatus
+} from '../../actions/Auth'
 class LogInContainer extends Component {
     constructor (props) {
         super(props)
@@ -14,7 +16,7 @@ class LogInContainer extends Component {
     render () {
         return (
             <div className="log-in-page">
-               <LogIn />
+               <LogIn {...this.props}/>
             </div>
         )
     }
@@ -23,13 +25,15 @@ class LogInContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        
+        isLoggedIn: state.Auth.isLoggedIn
     };
 };
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        
+        changeLoggedStatus: () => {
+            dispatch(changeLoggedStatus())
+        }
     };
 }
 

@@ -10,11 +10,15 @@ import InfoImage from '../../../assets/images/job/info-icon.png'
 import ScheduleButton from '../../../assets/images/message/schedule-button.png'
 
 class CandidateCard extends Component {
-    
+    changeMessagePanelStatus = () => {
+        console.log("**********************************")
+        const { changeMessagePanelStatus } = this.props
+        changeMessagePanelStatus();
+    }
     render () {
         
         return (
-            <div className="candidate-card-container">
+            <div className="candidate-card-container" onClick={this.changeMessagePanelStatus}>
                 <div className="left-card">
                     <div className="image-content">
                         <img src={ OvalImage } alt="Oval Image" />
