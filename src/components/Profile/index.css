@@ -41,6 +41,8 @@
 }
 .col-xl-8 .profile-content-container form .top-profile-content div:nth-child(1) {
     text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 .col-xl-8 .profile-content-container form .top-profile-content div:nth-child(1) label {
     color: #8951d7;
@@ -102,6 +104,9 @@
     padding-left: 0;
     text-align: start;
 }
+.col-xl-8 .profile-content-container form .bottom-profile-content input {
+    margin-top: 0;
+}
 .col-xl-8 .profile-content-container form .bottom-profile-content input, textarea {
     width: 100%;
     height: 44px;
@@ -137,7 +142,7 @@
     box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
 }
 .col-xl-4 .member-content-container  input {
-    width: 100%;
+    width: 90%;
     height: 44px;
     padding-left: 15px;
     border-radius: 6px;

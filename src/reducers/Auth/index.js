@@ -6,7 +6,7 @@ import {
 
 const initialState = {
    signUpStep: 1,
-   isLoggedIn: false,
+   isLoggedIn: true,
 };
 
 const reducer = (state = initialState, action) => {

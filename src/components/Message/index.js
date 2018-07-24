@@ -51,10 +51,13 @@ class Message extends Component {
                         <div className="panel-container">
                             {this.renderItem(messagePanelStatus)}
                         </div>
-                        <div className="message-conversation-panel">
+                        {
+                            !messagePanelStatus && <div className="message-conversation-panel">
                             <div className="message-box">
+                                </div>
                             </div>
-                        </div>
+                        }
+                        
                     </div>
                 </div>
             </DashboardContainer>

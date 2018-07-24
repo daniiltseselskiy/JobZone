@@ -26,6 +26,8 @@
     "reactstrap": "^6.3.0",
     "redux": "^4.0.0",
     "redux-logger": "^3.0.6",
+    "redux-storage": "^4.1.2",
+    "redux-storage-engine-localstorage": "^1.1.4",
     "redux-thunk": "^2.3.0",
     "styled-components": "^3.3.3"
   },

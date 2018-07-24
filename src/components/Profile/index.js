@@ -111,7 +111,7 @@ class Profile extends Component {
                                     <Label>Change Password</Label>
                                     <img src={ NextIcon } alt="Next Icon" />
                                 </div>
-                                { isEditMember && <img src={ SaveButton } alt="Save Button" /> }
+                                { isEditMember && <img src={ SaveButton } alt="Save Button" onClick={this.onEditMember}/> }
                             </Form>
                         </Container>
                     </Col>

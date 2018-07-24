@@ -1,13 +1,9 @@
 import React , { Component } from 'react'
 import { Label, Input } from 'reactstrap'
 import './index.css'
-import ShortlistButton from '../../../assets/images/job/shortlist-button.png'
-import RejectButton from '../../../assets/images/job/reject-button.png'
-import FullProfileButton from '../../../assets/images/job/full-profile-button.png'
+
 import OvalImage from '../../../assets/images/message/oval1.png'
 import LocationImage from '../../../assets/images/job/location-icon.png'
-import InfoImage from '../../../assets/images/job/info-icon.png'
-import ScheduleButton from '../../../assets/images/message/schedule-button.png'
 
 class CandidateCard extends Component {
     changeMessagePanelStatus = () => {

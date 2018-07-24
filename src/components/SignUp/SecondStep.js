@@ -22,10 +22,10 @@ class SecondStep extends Component {
                 <Label className="label-top-title">Create an Account</Label>
                 <Form>
                     <FormGroup>
-                        <Input type="email" name="email" id="signupEmail" placeholder="Email" />
+                        <Input type="text" name="company" id="company" placeholder="Company" />
                     </FormGroup>
                     <FormGroup>
-                        <Input type="password" name="password" id="signupPassword" placeholder="Password" />
+                        <Input type="tel" name="phoneNumber" id="phoneNumber" placeholder="Phone Number" />
                     </FormGroup>  
                     <FormGroup>
                         <Input type="text" name="location" id="signupLocation" placeholder="Location" />
