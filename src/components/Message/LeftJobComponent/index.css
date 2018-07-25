@@ -3,6 +3,9 @@
     flex-direction: row;
     padding: 3% 1%;
     margin: 1% 0;
+    
+}
+.left-job-container.active {
     background-color: #f3ecfa;
 }
 .left-job-container div:nth-child(1) {
@@ -46,6 +49,7 @@
     font-size: 11px;
     font-weight: 400;
     line-height: 22px;
+    margin-left: 2%;
 }
 .left-job-container div:nth-child(2) label.candidate {
     color: #252525;

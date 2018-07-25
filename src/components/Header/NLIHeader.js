@@ -44,7 +44,7 @@ class NLIHeader extends Component {
                                 <NavLink className="nav-text" href="/log-in">Sign In</NavLink>
                             </NavItem>
                             <NavItem className="background-gradient">
-                                <NavLink className="nav-text button-gradient" href="#">Hire Workers</NavLink>
+                                <NavLink className="nav-text button-gradient">Hire Workers</NavLink>
                             </NavItem>
                         </Nav>
                     </Collapse>

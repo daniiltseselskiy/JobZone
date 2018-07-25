@@ -21,7 +21,7 @@
 .col-xl-8 .profile-content-container {
     margin-top: 2rem;
     margin-bottom: 2rem;
-    padding: 6% 8% 6% 6%;
+    padding: 6% 5% 6% 5%;
     background-color: #ffffff;
     border-radius: 6px;
     -webkit-box-shadow: 0px 2px 21px 0px rgba(0,0,0,0.35);
@@ -45,6 +45,7 @@
     flex-direction: column;
 }
 .col-xl-8 .profile-content-container form .top-profile-content div:nth-child(1) label {
+    margin-top: 5%;
     color: #8951d7;
     font-size: 12px;
     font-weight: 400;
@@ -60,6 +61,7 @@
     border: 1px solid #ebebeb;
 }
 .col-xl-8 .profile-content-container form .top-profile-content div:nth-child(2) {
+    margin-left: 2%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -89,7 +91,7 @@
     margin-left: 10px;
 }
 .col-xl-8 .profile-content-container form .top-profile-content div:nth-child(3) img.profile-status {
-    align-self: center;
+    align-self: start;
 }
 .col-xl-8 .profile-content-container form .bottom-profile-content {
     margin-top: 2rem;

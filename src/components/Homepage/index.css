@@ -25,8 +25,7 @@
     letter-spacing: 0.53px;
 }
 .home-page-container .row.home-panel .col-lg-6.right-image {
-    padding-left: 0;
-    padding-right: 2%;
+    padding: 5% 7% 5% 5%;
 }
 .home-page-container .row.home-panel .col-lg-6 img, .row.home-job-panel .col-lg-6 img {
     width: 100%;
@@ -38,25 +37,25 @@
 .home-page-container .row.home-job-panel .col-lg-6.left-job-image {
     position: relative;
     padding-left: 13%;
-    padding-right: 3%;
+    padding-right: 5%;
 }
 .home-page-container .row.home-job-panel .col-lg-6.right-business-image {
     position: relative;
-    padding-left: 3%;
+    padding-left: 5%;
     padding-right: 13%;
 }
 .home-page-container .row.home-job-panel .col-lg-6.left-job-image img:nth-child(2) {
     position: absolute;
     width: 31%;
     bottom: 11%;
-    left: 43%;
-   
+    left: 42%;
+   margin-left: 0;
 }
 .home-page-container .row.home-job-panel .col-lg-6.right-business-image img:nth-child(2) {
     position: absolute;
     width: 31%;
     bottom: 11%;
-    right: 45%;
+    right: 43%;
 }
 .home-page-container .row.home-job-panel .col-lg-6.right-business-image img:nth-child(3) {
     position: absolute;
@@ -79,7 +78,7 @@
 
 .home-page-container .why-jobzone-panel .row .col-lg-4 {
     text-align: center;
-    padding-top: 6%;
+    padding: 6% 3% 0 3%;
 }
 .home-page-container .why-jobzone-panel .row .col-lg-4 h1 {
     padding-top: 18%;

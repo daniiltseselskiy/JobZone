@@ -50,7 +50,7 @@
 }
 .right-message-container .left-card .left-location-container label {
     padding: 0;
-    margin-left: 3%;
+    margin-left: 2% !important;
     color: #8d8d8d;
     font-size: 14px;
     font-weight: 400;
@@ -67,6 +67,7 @@
 }
 .right-message-container .right-card img {
     cursor: pointer;
+    margin-left: 0;
 }
 .right-message-container .right-card .scheduled {
     display: flex;

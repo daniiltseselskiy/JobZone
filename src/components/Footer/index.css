@@ -28,6 +28,12 @@
 .footer-container .footer-body .logo-text .zone-text {
     font-weight: 400;
 }
+.footer-container .footer-body .row .col-lg-4 {
+    padding-left: 0;
+}
+.footer-container .footer-body .row .col-lg-4 img {
+    margin-left: 0;
+}
 /* Follow Items  */
 .footer-container .footer-body .row .col-lg-4 .follow-items {
    display: flex;

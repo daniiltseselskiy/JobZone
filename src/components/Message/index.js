@@ -43,7 +43,7 @@ class Message extends Component {
             <DashboardContainer isProfile={ true }>
                 <div className="message-container">
                     <div className="message-left-panel">
-                        <LeftJobComponent />
+                        <LeftJobComponent isActive={true}/>
                         <LeftJobComponent />
                     </div>
                     <div className="message-right-panel">

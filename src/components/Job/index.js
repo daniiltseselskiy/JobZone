@@ -16,7 +16,7 @@ class Job extends Component {
             <DashboardContainer isProfile={ false }>
                 <div className="job-content">
                         <div className="mark-container">
-                            <div className="mark-content">
+                            <div className="mark-content active">
                                 <img src={ MarkOpenJob } alt="Mark Background Image" />
                                 <Label>1</Label>
                             </div>
@@ -26,7 +26,7 @@ class Job extends Component {
                             </div>
                             <div className="mark-content">
                                 <img src={ MarkExpired } alt="Mark Background Image" />  
-                                <Label>0</Label>
+                                <Label>0</Label>    
                             </div>
                         </div>
                         <div className="main-container">

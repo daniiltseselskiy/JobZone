@@ -6,8 +6,9 @@ import LocationIcon from '../../../assets/images/message/location-icon.png'
 
 class LeftJobComponent extends Component {
     render () {
+        const { isActive } = this.props
         return (
-            <div className="left-job-container">
+            <div className={ isActive? "left-job-container active" : "left-job-container"}>
                 <div>
                     <img src={JobImage} alt="Job Image"/>
                 </div>
