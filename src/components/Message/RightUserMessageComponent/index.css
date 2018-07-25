@@ -26,18 +26,18 @@
 .right-message-container .left-card .label-content {
     display: flex;
     flex-direction: column;
-    padding: 7% 2%;
+    padding: 7% 1% 7% 3%;
     width: 70%;
     justify-content: space-around;
 }
 .right-message-container .left-card .label-content label:nth-child(1) {
-    margin: 0;
+    
     color: #252525;
     font-size: 20px;
     font-weight: 700;
 }
 .right-message-container .left-card .label-content label:nth-child(2) {
-    margin: 0;
+    
     color: #252525;
     font-size: 16px;
     font-weight: 500;
@@ -46,9 +46,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 3% 0;
+    padding: 1% 0;
 }
 .right-message-container .left-card .left-location-container label {
+    margin-bottom: 0;
     padding: 0;
     margin-left: 2% !important;
     color: #8d8d8d;
