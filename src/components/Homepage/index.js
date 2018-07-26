@@ -40,7 +40,7 @@ class Homepage extends Component {
                         <img src={WebsiteCircleImage} alt="Website Circle Image" />                        
                     </Col>
                 </Row>
-                <div className="why-jobzone-panel">
+                <div className="why-jobzone-panel" id="whyjobzone">
                     <Container>
                         <h1>Why Jobzone</h1>
                     </Container>
@@ -62,7 +62,7 @@ class Homepage extends Component {
                         </Col>
                     </Row>
                 </div>
-                <div className="how-it-works-panel">
+                <div className="how-it-works-panel" id="howitworks">
                     <Container>
                         <h1>How It Works</h1>
                     </Container>

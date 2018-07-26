@@ -4,7 +4,7 @@ import {
 } from '../../constants/actionTypes';
 
 const initialState = {
-   messagePanelStatus: false
+   messagePanelStatus: true
 };
 
 const reducer = (state = initialState, action) => {

@@ -25,7 +25,7 @@ class NLIHeader extends Component {
         this.setState({
           isOpen: !this.state.isOpen
         });
-      }
+    }
     render () {
         return (
             <div className="nliheader-container">
@@ -35,10 +35,10 @@ class NLIHeader extends Component {
                     <Collapse isOpen={this.state.isOpen} navbar>
                         <Nav className="ml-auto" navbar>
                             <NavItem >
-                                <NavLink className="nav-text" href="#">Why Jobzon</NavLink>
+                                <NavLink className="nav-text" href="#whyjobzone">Why Jobzon</NavLink>
                             </NavItem>
                             <NavItem >
-                                <NavLink className="nav-text" href="#">How It Works</NavLink>
+                                <NavLink className="nav-text" href="#howitworks">How It Works</NavLink>
                             </NavItem>
                             <NavItem >
                                 <NavLink className="nav-text" href="/log-in">Sign In</NavLink>

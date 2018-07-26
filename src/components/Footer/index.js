@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Container, Row, Col} from 'reactstrap';
+import { Link } from 'react-router-dom'
 import './index.css';
 import InstagramIcon from '../../assets/images/footer/instagram-icon.png'
 import FacebookIcon from '../../assets/images/footer/facebook-icon.png'
@@ -12,7 +13,7 @@ class Footer extends Component {
             <div className="footer-container">
                 <Container className="footer-body">
                     <Container className="logo-text">
-                        <a href="#" >
+                        <a href="/" >
                             <h1 className="job-text">Job</h1><h3 className="zone-text">zone</h3>
                         </a>
                     </Container>
@@ -21,23 +22,23 @@ class Footer extends Component {
                             <p></p>
                             <p>Find and Follow us on</p>
                             <div className="follow-items">
-                                <img src={InstagramIcon} alt="Instagram" />
-                                <img src={FacebookIcon} alt="Facebook" />
-                                <img src={TwitterIcon} alt="Twitter" />
+                                <a href="https://www.instagram.com" target="blank"><img src={InstagramIcon} alt="Instagram" /></a>
+                                <a href="https://www.facebook.com" target="blank"><img src={FacebookIcon} alt="Facebook" /></a>
+                                <a href="https://www.twitter.com" target="blank"><img src={TwitterIcon} alt="Twitter" /></a>
                             </div>
                         </Col>
                         <Col lg="4" md="6" xs="12" >
                             <p>Download the app</p>
-                            <img src={AppstoreIcon} alt="Appstore" />
+                            <a href="https://www.appstore.com" target="blank"><img src={AppstoreIcon} alt="Appstore" /></a>
                         </Col>
                         <Col lg="4" md="12" xs="12"  className="footer-text-col">
                             <div className="footer-text">
-                                <p>About</p>
-                                <p>Terms of Service</p>
+                                <Link to=""><p>About</p></Link>
+                                <Link to=""><p>Terms of Service</p></Link>
                             </div>
                             <div className="footer-text">
-                                <p>Language</p>
-                                <p>Privacy Policy</p>
+                                <Link to=""><p>Language</p></Link>
+                                <Link to=""><p>Privacy Policy</p></Link>
                             </div>
                         </Col>
                     </Row>

@@ -39,8 +39,8 @@
    display: flex;
    margin-top: 10%;
 }
-.footer-container .footer-body .row .col-lg-4 .follow-items img {
-    padding-right: 20%;
+.footer-container .footer-body .row .col-lg-4 .follow-items a {
+    margin-right: 20%;
 }
 .footer-container .footer-body .row .col-lg-4.footer-text-col  {
     padding-top: 6%;
@@ -49,8 +49,10 @@
 .footer-container .footer-body .row .col-lg-4 .footer-text {
     display: flex;
  }
- .footer-container .footer-body .row .col-lg-4 .footer-text p {
+ .footer-container .footer-body .row .col-lg-4 .footer-text a {
      width: 50%;
+     color: #ffffff;
+     text-decoration: none;
  }
  /* Phone padding top 20  */
  .footer-container .footer-body .row .col-12 {
