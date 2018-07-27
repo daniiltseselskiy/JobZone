@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Col, Row, Label } from 'reactstrap'
+import { Label } from 'reactstrap'
 import DashboardContainer from '../DashboardContainer'
 import LeftJobComponent from './LeftJobComponent'
 import MessagePanel from './MessagePanel'
@@ -9,8 +9,7 @@ import BackButton from '../../assets/images/message/back-button.png'
 
 class Message extends Component {
     constructor(props) {
-        super(props)     
-        
+        super(props)  
     }
     changeMessagePanelStatus = () => {
         const { changeMessagePanelStatus } = this.props
