@@ -9,7 +9,6 @@ import MarkOpenJob from '../../assets/images/job/mark-open-job.png'
 import MarkDraft from '../../assets/images/job/mark-draft.png'
 import MarkExpired from '../../assets/images/job/mark-expired.png'
 
-
 class Job extends Component {
     render () {
         return (

@@ -56,13 +56,14 @@ class LIHeader extends Component {
     }
 
     renderItem = (itemsNotification) => {
-        return itemsNotification.map (
-            (item, key) => {
+        return itemsNotification.map(
+            (item, index) => {
                 return (
-                    <NotificationItem 
+                    <div key={index}>
+                        <NotificationItem 
                         item={item}
-                        key={key}
                     />
+                    </div>
                 )
             }
         )
