@@ -3,16 +3,20 @@
     position: relative;
     flex-direction: column;
     align-items: center;
-    width: 45%;
+    width: 80%;
+    margin-top: 10%;
     padding: 2% 0 4% 0;
     border-radius: 45px;
     background-color: #ffffff;
     box-shadow: 0 1px 5px #dddddd;
 }
 .job-item-container label:nth-child(1) {
+    width: 80%;
+    text-align: center;
     color: #252525;
     font-size: 44px;
     font-weight: 700;
+    
 }
 .job-item-container label:nth-child(2) {
     color: #8d8d8d;

@@ -14,7 +14,6 @@ class Header extends Component {
     }
     render () {
         const { isLoggedIn } = this.props
-        console.log(isLoggedIn)
         return (
             <Container className="header-container">
                 {this.renderHeader(isLoggedIn)}

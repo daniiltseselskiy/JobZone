@@ -14,7 +14,7 @@ import PostJobButton from '../../assets/images/homepage/post-job-button.png'
 class SideBar extends Component {
     
     render () {
-        const { isProfile, sideBarStatus, changeSideBarStatus, location } = this.props
+        const { isProfile, changeSideBarStatus, location } = this.props
 
         return (
             <div className="sidebar-container">

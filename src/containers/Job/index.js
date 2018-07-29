@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import Job from '../../components/Job';
 import {
-    onChangeContent
+    onChangeContent,
+    
 } from '../../actions/job';
  
 
@@ -26,7 +27,8 @@ class JobContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        currentTap: state.Job.currentTap
+        currentTap: state.Job.currentTap,
+       
     };
 };
 
@@ -34,7 +36,8 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         onChangeContent: currentTap => {
             dispatch(onChangeContent(currentTap));
-        }
+        },
+        
     };
 }
 

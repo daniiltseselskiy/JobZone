@@ -1,4 +1,4 @@
-import _ from 'lodash'
+// import _ from 'lodash'
 import {
     
 } from '../../constants/actionTypes';
@@ -8,7 +8,7 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
-    let newState = _.cloneDeep(state);
+    // let newState = _.cloneDeep(state);
     
     switch(action.type) {
         

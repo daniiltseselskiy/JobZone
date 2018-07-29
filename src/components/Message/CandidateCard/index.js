@@ -7,7 +7,6 @@ import LocationImage from '../../../assets/images/job/location-icon.png'
 
 class CandidateCard extends Component {
     changeMessagePanelStatus = () => {
-        console.log("**********************************")
         const { changeMessagePanelStatus } = this.props
         changeMessagePanelStatus();
     }

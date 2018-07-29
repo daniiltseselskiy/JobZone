@@ -8,9 +8,7 @@ import './index.css'
 import BackButton from '../../assets/images/message/back-button.png'
 
 class Message extends Component {
-    constructor(props) {
-        super(props)  
-    }
+   
     changeMessagePanelStatus = () => {
         const { changeMessagePanelStatus } = this.props
         changeMessagePanelStatus()

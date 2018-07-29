@@ -6,16 +6,17 @@ import LocationImage from '../../../assets/images/dashboard/location-icon.png'
 import ViewJobButton from '../../../assets/images/dashboard/view-job-button.png'
 class JobPositionComponent extends Component {
     render () {
+        const {  item } = this.props
         return (
             <div className="job-item-container">
             {/* <img className="background-image" src={JobPositionRect} alt="Job Position Rect" /> */}
-                <Label>Job Position</Label>
-                <Label>Company Name</Label>
+                <Label>{item.title}</Label>
+                <Label>{item.company.title}</Label>
                 <div className="location-image-container">
                     <img src={LocationImage} alt="Location Image" />
                     <div>
-                        <Label>Lorem Ips, LA, California St.</Label>
-                        <Label>Posted January 9, 2018</Label>
+                        <Label>{item.address}</Label>
+                        <Label>{item.created_date}</Label>
                     </div>
                 </div>
                 <div className="applied-shortlisted-container">

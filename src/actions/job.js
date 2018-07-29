@@ -6,7 +6,12 @@ import {
     CHANGE_CURRENT_TAP,
     API_LOADING,
     GET_JOB_LIST_SUCCESS,
-    GET_JOB_LIST_FAILED
+    GET_JOB_LIST_FAILED,
+    CHANGE_SEARCH_COMPANY,
+    CHANGE_SEARCH_JOB,
+    CHANGE_SEARCH_CANDIDATE,
+    CHANGE_SEARCH_APPLIED,
+    CHANGE_SEARCH_DATE,
 } from '../constants/actionTypes';
 
 export function onChangeContent(currentTap) {
@@ -46,5 +51,40 @@ export function getJobList() {
         .catch(err => {
             dispatch(getedJobListFailed(err));
         })
+    }
+}
+
+export function changeSearchCompany (company) {
+    return {
+        type: CHANGE_SEARCH_COMPANY,
+        company
+    }
+}
+
+export function changeSearchJob (job) {
+    return {
+        type: CHANGE_SEARCH_JOB,
+        job
+    }
+}
+
+export function changeSearchApplied (applied) {
+    return {
+        type: CHANGE_SEARCH_APPLIED,
+        applied
+    }
+}
+
+export function changeSearchCandidate (candidate) {
+    return {
+        type: CHANGE_SEARCH_CANDIDATE,
+        candidate
+    }
+}
+
+export function changeSearchDate (date) {
+    return {
+        type: CHANGE_SEARCH_DATE,
+        date
     }
 }
