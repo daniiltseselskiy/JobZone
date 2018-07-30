@@ -8,7 +8,7 @@ class CreateJob extends Component {
     render () {
         return (
             <DashboardContainer isProfile = { false }>
-                <CNJobCard />
+                <CNJobCard {...this.props}/>
             </DashboardContainer>
         )
     }

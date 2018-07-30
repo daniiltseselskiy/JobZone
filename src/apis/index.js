@@ -18,3 +18,10 @@ export const getJobListService = () => {
         return err;
     })
 }
+//Post Job Api Service
+export const postJobService = () => {
+
+}
+export const editJobService = () => {
+    
+}

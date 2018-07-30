@@ -8,7 +8,7 @@ class EditJob extends Component {
     render () {
         return (
             <DashboardContainer isProfile = { false }>
-                <CNJobCard isEdit = { true }/>
+                <CNJobCard isEdit = { true } {...this.props}/>
             </DashboardContainer>
         )
     }

@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import { Container, Label , Input} from 'reactstrap'
 import DatePicker from 'react-datepicker'
-import moment from 'moment';
 import 'react-datepicker/dist/react-datepicker.css';
 import './index.css'
 import JobImage from '../../../assets/images/job/job-image.png'
@@ -21,36 +20,84 @@ class CNJobCard extends Component {
 
     constructor ( props ) {
         super (props)
-        this.renderInputByEditable = this.renderInputByEditable.bind(this)
+        
         const { isEdit } = this.props
         this.state = {
-            isEdit: isEdit
+            isEdit: isEdit,
+            jobPosition: "",
+            company: "",
+            title: "",
+            skills: "",
+            location: "",
+            description: "",
+            language: "",
         }
     }
-    renderInputByEditable = ( value, placeholder ) => {
-        if ( this.state.isEdit ) {
-            return <Input value={ value }></Input>
-        } else {
-            return <Input placeholder={ placeholder }></Input>
-        }
+    saveJob = () => {
+
     }
-    renderDescription = ( value, placeholder ) => {
-        if ( this.state.isEdit ) {
-            return <Input type="textarea" value={ value }></Input>
-        } else {
-            return <Input type="textarea" placeholder={ placeholder }></Input>
-        }
+    createJob = () => {
+        const { postJob } = this.props
+        var item = []
+        item.jobPosition = this.state.jobPosition
+        item.company = this.state.company
+        item.title = this.state.title
+        item.skills = this.state.skills
+        item.location = this.state.location
+        item.description = this.state.description
+        item.language = this.state.language
+        postJob(item)
     }
+    deleteJob = () => {
+
+    }
+    //Handle Onchange
+    handleChangeForjobPosition = (evt) => {
+        this.setState({
+            jobPosition: evt.target.value,
+        })
+    }
+    handleChangeForCompany = (evt) => {
+        this.setState({
+            company: evt.target.value,
+        })
+    }
+    handleChangeForTitle = (evt) => {
+        this.setState({
+            title: evt.target.value,
+        })
+    }
+    handleChangeForSkills = (evt) => {
+        this.setState({
+            skills: evt.target.value,
+        })
+    }
+    handleChangeForDescription = (evt) => {
+        this.setState({
+            description: evt.target.value,
+        })
+    }
+    handleChangeForLocation = (evt) => {
+        this.setState({
+            location: evt.target.value,
+        })
+    }
+    handleChangeForLanguage = (evt) => {
+        this.setState({
+            language: evt.target.value,
+        })
+    }
+    //Render 
     renderButton = () => {
         if ( this.state.isEdit ) {
             return  <Container className="cnjob-container-button">
-                        <img src={ SaveButton } alt="Save Button" />
-                        <img src={ DeleteButton } alt="Delete Button" />
+                        <img src={ SaveButton } alt="Save Button" onClick={this.saveJob}/>
+                        <img src={ DeleteButton } alt="Delete Button" onClick={this.deleteJob}/>
                     </Container>
                    
         } else {
             return  <Container className="cnjob-container-button">
-                        <img src={ PostButton } alt="Post Button" />
+                        <img src={ PostButton } alt="Post Button" onClick={this.createJob}/>
                     </Container>
         }
     }
@@ -62,34 +109,33 @@ class CNJobCard extends Component {
                         <Label>upload image</Label>
                     </Container>
                     <Container className="cnjob-container-job-position">
-                        {this.renderInputByEditable("Job Position", "Job Position")}
+                        <Input value={this.state.jobPosition} placeholder="Job Position" onChange={this.handleChangeForjobPosition}></Input>
                     </Container>
                     <Container className="cnjob-container-company">
-                        {this.renderInputByEditable("Company Name", "Company Name")}
+                        <Input value={this.state.company} placeholder="Company Name" onChange={this.handleChangeForCompany}></Input>
                     </Container>
                     <Container className="cnjob-container-image-input">
                         <img src={ TitleIcon } alt="Title Icon" />
-                        {this.renderInputByEditable("Barista", "Category")}
+                        <Input value={this.state.title} placeholder="Category" onChange={this.handleChangeForTitle}></Input>
                     </Container>
                     <Container className="cnjob-container-description">
                         <img src={ InfoIcon } alt="Info Icon" />
-                        {this.renderDescription("I am a hard working person with good experiences in my position", "Description")}
+                        <Input type="textarea" value={this.state.description} placeholder="Description" onChange={this.handleChangeForDescription}></Input>
                     </Container>
                     <Container className="cnjob-container-image-input">
                         <img src={ LocationIcon } alt="Location Icon" />
-                        <Input value="Lorem Ips, LA, California St."></Input>
+                        <Input value={this.state.location} onChange={this.handleChangeForLocation} ></Input>
                     </Container>
                     <Container className="cnjob-container-image-input">
                         <img src={ SkillIcon } alt="Skill Icon" />
-                        {this.renderInputByEditable("Javascript", "Skills")}
+                        <Input value={this.state.skills} placeholder="Javascript" onChange={this.handleChangeForSkills} ></Input>
                     </Container>
                     <Container className="cnjob-container-image-input">
                         <img src={ GlobalIcon } alt="Global Icon" />
-                        <Input value="English"></Input>
+                        <Input value="English" onChange={this.handleChangeForLanguage}></Input>
                     </Container>
                     <Container className="cnjob-container-image-input">
                         <img src={ DateIcon } alt="Date Icon" />
-                        {/* {this.renderInputByEditable("9:00am-18:00pm", "")} */}
                         <DatePicker />
                     </Container>
                     <Container className="cnjob-container-day">

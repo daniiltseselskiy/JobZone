@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import CreateJob from '../../components/Job/CreateJob' 
-
+import {
+    postJob,
+} from '../../actions/job'
 class CreateJobContainer extends Component {
     constructor (props) {
         super(props)
@@ -13,7 +15,7 @@ class CreateJobContainer extends Component {
     render () {
         return (
             <div className="create-job-page">
-                <CreateJob />
+                <CreateJob {...this.props}/>
             </div>
         )
     }
@@ -28,7 +30,9 @@ const mapStateToProps = (state, ownProps) => {
 
 const mapDispatchToProps = (dispatch, ownProps) => {
     return {
-        
+        postJob: item => {
+            dispatch(postJob(item))
+        }
     };
 }
 
