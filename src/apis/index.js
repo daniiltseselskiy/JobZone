@@ -23,5 +23,16 @@ export const postJobService = () => {
 
 }
 export const editJobService = () => {
+
+}
+
+export const getProfileService = () => {
+
+}
+export const editProfileService = () => {
+
+}
+
+export const editMemberService = () => {
     
 }

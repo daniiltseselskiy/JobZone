@@ -3,7 +3,10 @@ import { connect } from 'react-redux'
 import Profile from '../../components/Profile'
 import {
     onOpenEditProfile,
-    onOpenEditMember
+    onOpenEditMember,
+    getProfile,
+    editProfile,
+    editMember,
 } from '../../actions/profile';
 
 class ProfileContainer extends Component {
@@ -13,6 +16,10 @@ class ProfileContainer extends Component {
         this.state = {
            
         }
+    }
+    componentDidMount() {
+        const { getProfile } = this.props
+        getProfile();
     }
     render () {
        
@@ -27,7 +34,10 @@ class ProfileContainer extends Component {
 const mapStateToProps = (state, ownProps) => {
     return {
         isEditProfile: state.Profile.isEditProfile,
-        isEditMember: state.Profile.isEditMember
+        isEditMember: state.Profile.isEditMember,
+        isLoading: state.Profile.isLoading,
+        profile: state.Profile.profile,
+        errors: state.Profile.errors,
     };
 };
 
@@ -38,6 +48,15 @@ const mapDispatchToProps = (dispatch, ownProps) => {
         },
         onOpenEditMember: () => {
             dispatch(onOpenEditMember());
+        },
+        getProfile: () => {
+            dispatch(getProfile());
+        },
+        editProfile: (item) => {
+            dispatch(editProfile(item))
+        },
+        editMember: (item) => {
+            dispatch(editMember(item));
         }
     };
 }
