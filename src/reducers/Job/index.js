@@ -21,7 +21,6 @@ const initialState = {
    searchCandidate: "",
    searchApplied: "",
    searchDate: "",
-
 };
 
 const reducer = (state = initialState, action) => {
