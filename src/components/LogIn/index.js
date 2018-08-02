@@ -1,6 +1,6 @@
 import React , { Component } from 'react'
 import { Container, Row , Col, Input, Label, Form, FormGroup } from 'reactstrap'
-import { Link } from 'react-router-dom'
+import { Link ,Redirect} from 'react-router-dom'
 import './index.css'
 import AuthContainer from '../AuthContainer'
 import SignInButton from '../../assets/images/authcontainer/sign-in-button.png'
@@ -12,8 +12,14 @@ class LogIn extends Component {
         this.state = {
             email: "",
             password: "",
-            phone: "+14845084838"
+            phone: "+14845084838",
+            redirect: false,
         }
+    }
+    componentWillReceiveProps (nextProps) {
+        this.setState({
+            redirect: nextProps.isLoggedIn
+        })
     }
     handleChangeEmail = (evt) => {
         this.setState({
@@ -26,14 +32,20 @@ class LogIn extends Component {
         })
     }
     SignIn = () => {
-        const { signIn } = this.props
+        const { signIn, isLoggedIn } = this.props
         // changeLoggedStatus()
         signIn(this.state)
     }
+    renderRedirect = () => {
+        if (this.state.redirect) {
+          return <Redirect to='/dashboard' />
+        }
+    }
     render () {
-        const { isLoggedIn} = this.props
+       
         return (
             <AuthContainer BackgroundImage={BackgroundImage}>
+                {this.renderRedirect()}
                 <Container className="login-container">
                     <Label className="label-top-title">Sign In</Label>
                     <Form>
@@ -46,9 +58,9 @@ class LogIn extends Component {
                         <FormGroup check>
                             <Link to="/forgotpassword">Forgot Password?</Link>
                         </FormGroup>
-                        <Link to="/dashboard">
-                            <img className="one-image-button" src={ SignInButton } alt="Continue Button" onClick={this.SignIn}/>
-                        </Link>
+                        
+                        <img className="one-image-button" src={ SignInButton } alt="Continue Button" onClick={this.SignIn}/>
+                       
                     </Form>
                     <Label className="label-bottom-link">
                         Need an account?{' '}

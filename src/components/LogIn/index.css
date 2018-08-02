@@ -50,7 +50,7 @@
 .login-container form input:focus {
     box-shadow: none;
 }
-.login-container form a img.one-image-button {
+.login-container form img.one-image-button {
     display: block;
     margin: 25% auto 0 auto;
     width: 60%;

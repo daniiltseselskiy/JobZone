@@ -1,6 +1,6 @@
 
-const baseUrl = 'http://localhost:3001'
-// const baseUrl = 'https://boiling-anchorage-83020.herokuapp.com'
+// const baseUrl = 'http://localhost:3001'
+const baseUrl = 'https://boiling-anchorage-83020.herokuapp.com'
 
 export const fetchDataService = (url,authentication_token) => {
     return fetch(baseUrl + url, {
