@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import LogIn from '../../components/LogIn'
 import {
-    changeLoggedStatus
+    changeLoggedStatus,
+    signIn,
 } from '../../actions/Auth'
 class LogInContainer extends Component {
     constructor (props) {
@@ -33,7 +34,10 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         changeLoggedStatus: () => {
             dispatch(changeLoggedStatus())
-        }
+        },
+        signIn: user => {
+            dispatch(signIn(user))
+        },
     };
 }
 

@@ -1,11 +1,13 @@
 .message-container {
     width: 100%;
+    height: calc(100vh - 96px);
     padding: 3% 7%;
     display: flex;
     flex-direction: row;
 }
 .message-container .message-left-panel {
     height: 100%;
+    overflow-y: auto;
     width: 30%;
     padding: 3% 0;
     border-radius: 16px;

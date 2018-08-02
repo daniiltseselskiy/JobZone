@@ -7,22 +7,41 @@ import SignInButton from '../../assets/images/authcontainer/sign-in-button.png'
 import BackgroundImage from '../../assets/images/authcontainer/auth-image.png';
 
 class LogIn extends Component {
+    constructor () {
+        super ()
+        this.state = {
+            email: "",
+            password: "",
+            phone: "+14845084838"
+        }
+    }
+    handleChangeEmail = (evt) => {
+        this.setState({
+            email: evt.target.value
+        })
+    }
+    handleChangePassword = (evt) => {
+        this.setState({
+            password: evt.target.value
+        })
+    }
     SignIn = () => {
-        const { isLoggedIn, changeLoggedStatus } = this.props
-        changeLoggedStatus()
+        const { signIn } = this.props
+        // changeLoggedStatus()
+        signIn(this.state)
     }
     render () {
-        
+        const { isLoggedIn} = this.props
         return (
             <AuthContainer BackgroundImage={BackgroundImage}>
                 <Container className="login-container">
                     <Label className="label-top-title">Sign In</Label>
                     <Form>
                         <FormGroup>
-                            <Input type="email" name="email" id="signupEmail" placeholder="Email" />
+                            <Input value={this.state.email} type="email" name="email" id="signupEmail" placeholder="Email" onChange={this.handleChangeEmail}/>
                         </FormGroup>
                         <FormGroup>
-                            <Input type="password" name="password" id="signinPassword" placeholder="Password" />
+                            <Input value={this.state.password} type="password" name="password" id="signinPassword" placeholder="Password" onChange={this.handleChangePassword}/>
                         </FormGroup>                    
                         <FormGroup check>
                             <Link to="/forgotpassword">Forgot Password?</Link>

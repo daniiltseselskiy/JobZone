@@ -1,22 +1,20 @@
 import {
-    getJobListService,
-    postJobService,
-    editJobService,
+    postDataService,
+    updateDataService,
+    fetchDataService,
 } from '../apis';
 
 import {
     CHANGE_CURRENT_TAP,
     API_LOADING,
+    OPERATION_FAILED,
     GET_JOB_LIST_SUCCESS,
-    GET_JOB_LIST_FAILED,
     CHANGE_SEARCH_COMPANY,
     CHANGE_SEARCH_JOB,
     CHANGE_SEARCH_CANDIDATE,
     CHANGE_SEARCH_APPLIED,
     CHANGE_SEARCH_DATE,
-    POST_JOB_FAILED,
     POST_JOB_SUCCESS,
-    EDIT_JOB_FAILED,
     EDIT_JOB_SUCCESS,
 } from '../constants/actionTypes';
 
@@ -32,6 +30,13 @@ export function fetchingData() {
         type: API_LOADING
     }
 }
+
+export function operationFailed(error) {
+    return {
+        type: OPERATION_FAILED,
+        error
+    }
+}
 //Post Job.
 export function postedJobSuccess(item) {
     return {
@@ -39,22 +44,17 @@ export function postedJobSuccess(item) {
         item
     }
 }
-export function postedJobFailed(error) {
-    return {
-        type: POST_JOB_FAILED,
-        error
-    }
-}
+
 export function postJob (item) {
-    console.log(item)
+    
     return (dispatch, getState) => {
         dispatch(fetchingData());
-        return postJobService()
+        return postDataService()
         .then((response) => {
             dispatch(postedJobSuccess(response))
         })
         .catch((err) => {
-            dispatch(postedJobFailed(err))
+            dispatch(operationFailed(err))
         })
     }
 }
@@ -65,21 +65,15 @@ export function editedJobSuccess(item) {
         item
     }
 }
-export function editedJobFailed(error) {
-    return {
-        type: EDIT_JOB_FAILED,
-        error
-    }
-}
 export function editJob () {
     return (dispatch, getState) => {
         dispatch(fetchingData());
-        return editJobService()
+        return updateDataService()
         .then((response) => {
             dispatch(editedJobSuccess(response))
         })
         .catch((err) => {
-            dispatch(editedJobFailed(err))
+            dispatch(operationFailed(err))
         })
     }
 }
@@ -90,23 +84,15 @@ export function getedJobListSuccess(list) {
         list
     }
 }
-
-export function getedJobListFailed(error) {
-    return {
-        type: GET_JOB_LIST_FAILED,
-        error
-    }
-}
-
 export function getJobList() {
     return (dispatch, getState) => {
         dispatch(fetchingData());
-        return getJobListService()
+        return fetchDataService('/users/' + getState().Auth.userId + '/jobs.json', getState().Auth.authentication_token)
         .then((response) => {
             dispatch(getedJobListSuccess(response));
         })
         .catch(err => {
-            dispatch(getedJobListFailed(err));
+            dispatch(operationFailed(err));
         })
     }
 }

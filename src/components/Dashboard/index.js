@@ -79,7 +79,7 @@ const jobList = [
 class Dashboard extends Component {
     renderJobPositions = ( jobList ) => {
         const { apiLoading, searchCompany, searchJob, searchCandidate, searchApplied, searchDate } = this.props;
-        console.log("****************", searchCompany)
+       
         return jobList.map( (item, index) => {
             if (searchCompany !== null && searchCompany !== item.company.title ) {
                 return false

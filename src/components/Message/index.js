@@ -106,7 +106,7 @@ class Message extends Component {
         }
     }
     renderJobComponent = (jobList) => {
-        console.log(jobList)
+       
         return jobList.map( (job, index) => {
             
             return   <div key={index}>

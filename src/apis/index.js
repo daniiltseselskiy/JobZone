@@ -1,51 +1,14 @@
-export const getJobListService = () => {
-    return fetch('https://boiling-anchorage-83020.herokuapp.com/users/9/jobs.json', {
+
+const baseUrl = 'http://localhost:3001'
+// const baseUrl = 'https://boiling-anchorage-83020.herokuapp.com'
+
+export const fetchDataService = (url,authentication_token) => {
+    return fetch(baseUrl + url, {
         method: 'GET',
         headers: {
             'Accept': '*',
             'Content-Type': 'application/json',
-            'authentication_token': 'SsH1V6obEUjpJfjarxx1'
-        }
-    })
-    .then(response => {
-        console.log("*********************************");
-        console.log(response);
-        return response.json();
-    })
-    .catch(err => {
-        console.log("^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^");
-        console.log(err);
-        return err;
-    })
-}
-//Post Job Api Service
-export const postJobService = () => {
-
-}
-export const editJobService = () => {
-
-}
-
-export const getProfileService = () => {
-
-}
-export const editProfileService = () => {
-
-}
-
-export const editMemberService = () => {
-    
-}
-
-//////////////////////////////////////
-
-export const fetchDataService = () => {
-    return fetch('https://boiling-anchorage-83020.herokuapp.com/users/9/jobs.json', {
-        method: 'GET',
-        headers: {
-            'Accept': '*',
-            'Content-Type': 'application/json',
-            'authentication_token': 'SsH1V6obEUjpJfjarxx1'
+            'authentication_token': authentication_token
         }
     })
     .then(response => {
@@ -56,17 +19,16 @@ export const fetchDataService = () => {
     })
 }
 
-export const postDataService = () => {
-    return fetch('https://boiling-anchorage-83020.herokuapp.com/users/9/jobs.json', {
+export const postDataService = (url, item, authentication_token ) => {
+    return fetch(baseUrl + url, {
         method: 'POST',
         headers: {
-            'Accept': '*',
+            'Accept': '*/*',
             'Content-Type': 'application/json',
-            'authentication_token': 'SsH1V6obEUjpJfjarxx1'
+            'Access-Control-Allow-Methods': 'POST',
+            'authentication_token': authentication_token
         },
-        body: {
-
-        }
+        body: JSON.stringify(item)
     })
     .then(response => {
         return response.json();
@@ -76,13 +38,13 @@ export const postDataService = () => {
     })
 }
 
-export const deleteDataService = () => {
+export const deleteDataService = (url, authentication_token) => {
     return fetch('https://boiling-anchorage-83020.herokuapp.com/users/9/jobs.json', {
         method: 'DELETE',
         headers: {
             'Accept': '*',
             'Content-Type': 'application/json',
-            'authentication_token': 'SsH1V6obEUjpJfjarxx1'
+            'authentication_token': authentication_token
         }
     })
     .then(response => {
@@ -93,14 +55,15 @@ export const deleteDataService = () => {
     })
 }
 
-export const updateDataService = () => {
-    return fetch('https://boiling-anchorage-83020.herokuapp.com/users/9/jobs.json', {
+export const updateDataService = (url, item, authentication_token) => {
+    return fetch(baseUrl + url , {
         method: 'PUT',
         headers: {
             'Accept': '*',
             'Content-Type': 'application/json',
-            'authentication_token': 'SsH1V6obEUjpJfjarxx1'
-        }
+            'authentication_token': authentication_token
+        },
+        body: item
     })
     .then(response => {
         return response.json();

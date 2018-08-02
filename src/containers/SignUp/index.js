@@ -2,7 +2,10 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import SignUp from '../../components/SignUp';
 import {
-    changeSignUpStep
+    changeSignUpStep,
+    signUp,
+    sendVerification,
+    userVerification,
 } from '../../actions/Auth'
 class SignUpContainer extends Component {
     constructor (props) {
@@ -25,7 +28,8 @@ class SignUpContainer extends Component {
 
 const mapStateToProps = (state, ownProps) => {
     return {
-        signUpStep: state.Auth.signUpStep
+        signUpStep: state.Auth.signUpStep,
+        userId: state.Auth.userId,
     };
 };
 
@@ -33,6 +37,15 @@ const mapDispatchToProps = (dispatch, ownProps) => {
     return {
         changeSignUpStep: signUpStep => {
             dispatch(changeSignUpStep(signUpStep))
+        },
+        signUp: user => {
+            dispatch(signUp(user))
+        },
+        sendVerification: () => {
+            dispatch(sendVerification())
+        },
+        userVerification: verificationCode => {
+            dispatch(userVerification(verificationCode))
         }
     };
 }

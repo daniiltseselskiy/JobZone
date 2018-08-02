@@ -16,6 +16,46 @@ import ProfileStatus from '../../assets/images/profile/profile-status.png'
 
 class Profile extends Component {
 
+    constructor () {
+        super ()
+        this.state = {
+            companyName: "",
+            role: "",
+            email: "",
+            phone: "",
+        }
+    }
+    //receive props change
+    componentWillReceiveProps(nextProps) {
+        this.setState ({
+            companyName: nextProps.profile.provider,
+            role: nextProps.profile.role_id,
+            email: nextProps.profile.email,
+            phone: nextProps.profile.phone,
+        })
+    }
+    //handle Change event
+    handleChangeCompanyName = (evt) => {
+        this.setState({
+            companyName: evt.target.value
+        })
+    }
+    handleChangePosition = (evt) => {
+        this.setState({
+            role: evt.target.value
+        })
+    }
+    handleChangeEmail = (evt) => {
+        this.setState({
+            email: evt.target.email
+        })
+    }
+    handleChangePhone = (evt) => {
+        this.setState({
+            phone: evt.target.value
+        })
+    }
+    //render 
     renderItem = ( isEdit, Description1, Description2, single=false ) => {
         if ( !isEdit ) {
             return <Label>{Description1}</Label>
@@ -27,7 +67,7 @@ class Profile extends Component {
             }
         }
     }
-
+    
     onEditProfile = () => {
         const { onOpenEditProfile } = this.props;
         onOpenEditProfile();
@@ -37,7 +77,7 @@ class Profile extends Component {
         onOpenEditMember();
     }
     render () {
-        const { isEditProfile, isEditMember } = this.props
+        const { isEditProfile, isEditMember, profile } = this.props
 
         return (
             <DashboardContainer>
@@ -73,7 +113,7 @@ class Profile extends Component {
                                     </Container>
                                     <Container>
                                         <img src={ PhoneIcon } alt="Phone Icon" />
-                                        {this.renderItem(isEditProfile, "+1 818 789 897", "Phone Number", true)}
+                                        {this.renderItem(isEditProfile, profile.phone, "Phone Number", true)}
                                     </Container>
                                     <Container>
                                         <img src={ WarningIcon } alt="Warning Icon" />
@@ -96,16 +136,16 @@ class Profile extends Component {
                                     <img src={ EditProfileIcon } alt="Edit Profile Icon" onClick={this.onEditMember}/>
                                 </div>
                                 <div>
-                                    {this.renderItem(isEditMember, "Member Name", "Member Name", true)}
-                                    {this.renderItem(isEditMember, "Position", "Position", true)}
+                                    {!isEditMember? <Label>{this.state.companyName}</Label> : <Input value={this.state.companyName} type='text' onChange={this.handleChangeCompanyName}/>}
+                                    {!isEditMember? <Label>{this.state.role}</Label> : <Input value={this.state.role} type='text'onChange={this.handleChangePosition}/>}
                                 </div>
                                 <div className="image-input-container">
                                     <img src={ EmailIcon } alt="Email Icon" />
-                                    {this.renderItem(isEditMember, "Loremipsum@gmail.com", "Email", true)}
+                                    {!isEditMember? <Label>{this.state.email}</Label> : <Input value={this.state.email} type='email' onChange={this.handleChangeEmail}/>}
                                 </div>
                                 <div className="image-input-container">
                                     <img src={ PhoneIcon } alt="Phone Icon" />
-                                    {this.renderItem(isEditMember, "+1 818 789 897", "Phone Mumber", true)}
+                                    {!isEditMember? <Label>{this.state.phone}</Label> : <Input value={this.state.phone} type='tel' onChange={this.handleChangePhone}/>}
                                 </div>
                                 <div>
                                     <Label>Change Password</Label>

@@ -3,7 +3,7 @@ import {
     CHANGE_CURRENT_TAP,
     API_LOADING,
     GET_JOB_LIST_SUCCESS,
-    GET_JOB_LIST_FAILED,
+    OPERATION_FAILED,
     CHANGE_SEARCH_COMPANY,
     CHANGE_SEARCH_APPLIED,
     CHANGE_SEARCH_DATE,
@@ -37,7 +37,7 @@ const reducer = (state = initialState, action) => {
             newState.apiLoading = false;
             newState.jobList = action.list;
             return newState;
-        case GET_JOB_LIST_FAILED:
+        case OPERATION_FAILED:
             newState.apiLoading = false;
             newState.errors.push(action.error);
             return newState;

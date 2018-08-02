@@ -3,7 +3,7 @@ import {
     OPEN_EDIT_PROFILE,
     OPEN_EDIT_MEMBER ,
     GET_PROFILE_SUCCESS,
-    GET_PROFILE_FAILED,
+    OPERATION_FAILED,
     API_LOADING,
 } from '../../constants/actionTypes';
 
@@ -34,7 +34,7 @@ const reducer = (state = initialState, action) => {
             newState.apiLoading = false;
             newState.profile = action.profile;
             return newState;
-        case GET_PROFILE_FAILED:
+        case OPERATION_FAILED:
             newState.apiLoading = false;
             newState.errors.push(action.error);
         default:

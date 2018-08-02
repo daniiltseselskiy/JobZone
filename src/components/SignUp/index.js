@@ -10,13 +10,31 @@ import VerificationInProgress from './VerificationInProgress'
 
 class SingUp extends Component {
 
+    constructor () {
+        super ()
+        this.state = {
+            email: "",
+            password: "",
+            confirmPassword: "",
+            company: "",
+            phone: "",
+            locale: "",
+        }
+    }
+    setEmailandPassword = (email, password, confirmPassword) => {
+        this.setState({
+            email: email,
+            password: password,
+            confirmPassword: confirmPassword,
+        })
+    }
     renderStep = (currentStep) => {
-        
+        const { signUp } = this.props
         switch(currentStep) {
             case 1:
-                return <AuthContainer BackgroundImage={BackgroundImage}><FirstStep {...this.props}/></AuthContainer>;
+                return <AuthContainer BackgroundImage={BackgroundImage}><FirstStep setEmailandPassword={this.setEmailandPassword} {...this.props}/></AuthContainer>;
             case 2:
-                return <AuthContainer BackgroundImage={BackgroundImage}><SecondStep {...this.props}/></AuthContainer>;
+                return <AuthContainer BackgroundImage={BackgroundImage}><SecondStep signUp={signUp} {...this.state} {...this.props}/></AuthContainer>;
             case 3:
                 return <AuthContainer BackgroundImage={BackgroundImage}><ThirdStep {...this.props}/></AuthContainer>;
             case 4:

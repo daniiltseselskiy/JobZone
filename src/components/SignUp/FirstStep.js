@@ -3,11 +3,32 @@ import { Container, Row , Col, Input, FormGroup, Label, Form, FormText, Button }
 import { Link } from 'react-router-dom'
 import './index.css'
 import ContinueButton from '../../assets/images/authcontainer/continue-button.png'
+import ThirdStep from './ThirdStep';
 
 
 class FirstStep extends Component {
+    constructor () {
+        super ()
+        this.state = {
+            email: "",
+            password: "",
+            confirmPassword: "",
+        }
+    }
+    handleChangeEmail = (evt) => {
+        this.setState({
+            email: evt.target.value,
+        })
+    }
+    handleChangePassword = (evt) => {
+        this.setState({
+            password: evt.target.value,
+            confirmPassword: evt.target.value,
+        })
+    }
     changeSignUpStep = () => {
-        const { changeSignUpStep } = this.props
+        const { setEmailandPassword ,changeSignUpStep } = this.props
+        setEmailandPassword(this.state.email, this.state.password, this.state.confirmPassword)
         changeSignUpStep(2)
     }
     render () {
@@ -16,10 +37,10 @@ class FirstStep extends Component {
                 <Label className="label-top-title">Create an Account</Label>
                 <Form>
                     <FormGroup>
-                        <Input type="email" name="email" id="signupEmail" placeholder="Email" />
+                        <Input value={this.state.email} type="email" name="email" id="signupEmail" placeholder="Email" onChange={this.handleChangeEmail}/>
                     </FormGroup>
                     <FormGroup>
-                        <Input type="password" name="password" id="signupPassword" placeholder="Password" />
+                        <Input value={this.state.password} type="password" name="password" id="signupPassword" placeholder="Password" onChange={this.handleChangePassword}/>
                     </FormGroup>                    
                     <FormGroup check>
                         <Label check>

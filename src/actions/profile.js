@@ -1,23 +1,29 @@
 import {
     OPEN_EDIT_PROFILE,
     OPEN_EDIT_MEMBER,
-    GET_PROFILE_FAILED,
     GET_PROFILE_SUCCESS,
-    EDIT_PROFILE_FAILED,
     EDIT_PROFILE_SUCCESS,
-    EDIT_MEMBER_FAILED,
     EDIT_MEMBER_SUCCESS,
     API_LOADING,
+    OPERATION_FAILED,
 } from '../constants/actionTypes'
+
 import {
-    getProfileService,
-    editProfileService,
-    editMemberService,
+   fetchDataService,
+   postDataService,
+   updateDataService,
 } from '../apis'
 //Common Loading.
 export function fetchingData() {
     return {
         type: API_LOADING
+    }
+}
+
+export function operationFailed(error) {
+    return {
+        type: OPERATION_FAILED,
+        error 
     }
 }
 //isEdit
@@ -40,23 +46,17 @@ export function getedProfileSuccess(profile) {
     }
 }
 
-export function getedProfileFailed(error) {
-    return {
-        type: GET_PROFILE_FAILED,
-        error
-    }
-}
-
 export function getProfile() {
     return (dispatch, getState) => {
-        // dispatch(fetchingData());
-        // return getProfileService()
-        // .then((response) => {
-        //     dispatch(getedProfileSuccess(response));
-        // })
-        // .catch(err => {
-        //     dispatch(getedProfileFailed(err));
-        // })
+        console.log(getState())
+        dispatch(fetchingData());
+        return fetchDataService('/users/' + getState().Auth.userId + '.json', getState().Auth.authentication_token)
+        .then((response) => {
+            dispatch(getedProfileSuccess(response));
+        })
+        .catch(err => {
+            dispatch(operationFailed(err));
+        })
     }
 }
 //Edit Profile.
@@ -66,46 +66,35 @@ export function editedProfileSuccess(item) {
         item
     }
 }
-export function editedProfileFailed(error) {
-    return {
-        type: EDIT_PROFILE_FAILED,
-        error
-    }
-}
-export function editProfile () {
-    return (dispatch, getState) => {
-        // dispatch(fetchingData());
-        // return editProfileService()
-        // .then((response) => {
-        //     dispatch(editedProfileSuccess(response))
-        // })
-        // .catch((err) => {
-        //     dispatch(editedProfileFailed(err))
-        // })
-    }
+
+export function editProfile (profile) {
+    // return (dispatch, getState) => {
+    //     dispatch(fetchingData());
+    //     return updateDataService('/users/' + getState().Auth.userId + '.json', )
+    //     .then((response) => {
+    //         dispatch(editedProfileSuccess(response))
+    //     })
+    //     .catch((err) => {
+    //         dispatch(operationFailed(err))
+    //     })
+    // }
 }
 //Edit Member.
-export function editedMemberSuccess(item) {
+export function editedMemberSuccess(member) {
     return {
         type: EDIT_MEMBER_SUCCESS,
-        item
+        member
     }
 }
-export function editedMemberFailed(error) {
-    return {
-        type: EDIT_MEMBER_FAILED,
-        error
-    }
-}
-export function editMember () {
+export function editMember (member) {
     return (dispatch, getState) => {
-        // dispatch(fetchingData());
-        // return editMemberService()
-        // .then((response) => {
-        //     dispatch(editedMemberSuccess(response))
-        // })
-        // .catch((err) => {
-        //     dispatch(editedMemberFailed(err))
-        // })
+        dispatch(fetchingData());
+        return updateDataService('/users/' + getState().Auth.userId + '.json', member, getState().Auth.authentication_token)
+        .then((response) => {
+            dispatch(editedProfileSuccess(response))
+        })
+        .catch((err) => {
+            dispatch(operationFailed(err))
+        })
     }
 }
