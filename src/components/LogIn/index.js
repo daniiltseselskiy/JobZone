@@ -56,7 +56,7 @@ class LogIn extends Component {
                             <Input value={this.state.password} type="password" name="password" id="signinPassword" placeholder="Password" onChange={this.handleChangePassword}/>
                         </FormGroup>                    
                         <FormGroup check>
-                            <Link to="/forgotpassword">Forgot Password?</Link>
+                            <Link to="/forgotpassword">Forgot  Password?</Link>
                         </FormGroup>
                         
                         <img className="one-image-button" src={ SignInButton } alt="Continue Button" onClick={this.SignIn}/>
