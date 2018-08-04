@@ -43,7 +43,7 @@
 }
 .message-container .message-right-panel .message-conversation-panel {
     position: relative;
-    height: 545px;
+    height: 525px;
 }
 .message-container .message-right-panel .message-conversation-panel .message-box {
     position: absolute;
@@ -53,6 +53,11 @@
     left: 3%;
     border-radius: 36px;
     border: 1px solid #d3d3d3;
+}
+@media screen and (max-width: 1600px) {
+    .message-container .message-right-panel .message-conversation-panel {
+        height: 545px;
+    }
 }
 @media screen and (max-width: 1210px) {
     .message-container {

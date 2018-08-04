@@ -9,7 +9,7 @@ import {
 
 const initialState = {
    signUpStep: 1,
-   isLoggedIn: false,
+   isLoggedIn: true,
    userId: 0,
    verificationSuccess: false,
    authentication_token: '',
