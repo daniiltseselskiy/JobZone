@@ -3,18 +3,10 @@ import { Container, Row , Col, Input, Label } from 'reactstrap'
 import PinBox from 'react-pin-input'
 import BackButton from '../../assets/images/authcontainer/back-button.png';
 import BackgroundImage from '../../assets/images/authcontainer/auth-image.png';
-import LogoImage from '../../assets/images/header/logo.png'
 import './index.css'
 import AuthContainer from '../AuthContainer'
-const Style = {
-    padding: '10px',  
-}
-const InputStyle = {
-    borderColor: '#dedede', 
-    width: '102px', 
-    height: '127px',
-    margin: '10px'
-}
+
+
 class ForgotPassword extends Component {
     render () {
         return (

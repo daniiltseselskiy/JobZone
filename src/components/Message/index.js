@@ -23,20 +23,6 @@ const jobList = [
         "skills": []
     },
     {
-        "id": 4,
-        "title": "fsdjhfjk",
-        "address": null,
-        "status_id": 1,
-        "city": null,
-        "status": "active",
-        "created_date": "April 30, 18",
-        "company": {
-            "id": 1,
-            "title": "Jobzone"
-        },
-        "skills": []
-    },
-    {
         "id": 3,
         "title": "Sr Software Engineer",
         "address": null,
@@ -58,20 +44,6 @@ const jobList = [
         "city": "Isb",
         "status": "active",
         "created_date": "April 28, 18",
-        "company": {
-            "id": 1,
-            "title": "Jobzone"
-        },
-        "skills": []
-    },
-    {
-        "id": 1,
-        "title": "Jobezie",
-        "address": null,
-        "status_id": 1,
-        "city": "Lahore",
-        "status": "active",
-        "created_date": "April 25, 18",
         "company": {
             "id": 1,
             "title": "Jobzone"
