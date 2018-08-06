@@ -1,7 +1,6 @@
 import React , { Component } from 'react'
 import { Label } from 'reactstrap'
 import './index.css'
-import JobPositionRect from '../../../assets/images/dashboard/job-position-rectangle.png'
 import LocationImage from '../../../assets/images/dashboard/location-icon.png'
 import ViewJobButton from '../../../assets/images/dashboard/view-job-button.png'
 class JobPositionComponent extends Component {

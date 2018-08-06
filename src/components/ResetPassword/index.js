@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import { Container, Row , Col, Input } from 'reactstrap'
+import { Container, Input } from 'reactstrap'
 import './index.css'
 import AuthContainer from '../AuthContainer'
 import BackButton from '../../assets/images/authcontainer/back-button.png'

@@ -4,13 +4,8 @@ import { Link } from 'react-router-dom'
 import { Container, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from 'reactstrap'
 import './index.css'
 import {
-    Collapse,
     Navbar,
-    NavbarToggler,
     NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
     Input,
     InputGroup,
     InputGroupAddon,

@@ -1,7 +1,6 @@
 import React, {Component } from 'react'
 import './index.css'
 import { Container, Row , Col } from 'reactstrap'
-import AuthImage from '../../assets/images/authcontainer/auth-image.png'
 import LogoImage from '../../assets/images/header/logo.png'
 
 class AuthContainer extends Component {

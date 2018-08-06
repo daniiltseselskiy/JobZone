@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import { Container, Row , Col, Input, Label, Form, FormGroup } from 'reactstrap'
+import { Container, Input, Label, Form, FormGroup } from 'reactstrap'
 import { Link ,Redirect} from 'react-router-dom'
 import './index.css'
 import AuthContainer from '../AuthContainer'

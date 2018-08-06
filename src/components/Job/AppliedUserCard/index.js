@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import { Label, Input } from 'reactstrap'
+import { Label } from 'reactstrap'
 import './index.css'
 import ShortlistButton from '../../../assets/images/job/shortlist-button.png'
 import RejectButton from '../../../assets/images/job/reject-button.png'

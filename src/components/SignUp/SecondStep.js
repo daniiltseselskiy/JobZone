@@ -1,6 +1,6 @@
 import React , { Component } from 'react'
 import './index.css'
-import { Container, Col, Form, FormGroup, Row, Input, Label } from 'reactstrap'
+import { Container, Form, FormGroup, Input, Label } from 'reactstrap'
 import { Link } from 'react-router-dom'
 import ContinueButton from '../../assets/images/authcontainer/continue-button.png'
 import BackButton from '../../assets/images/authcontainer/back-button.png'

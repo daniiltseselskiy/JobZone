@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import { Container, Form , Row, Col, Label, Input } from 'reactstrap'
-import SideBar from '../SideBar'
 import DashboardContainer from '../DashboardContainer'
 import './index.css'
 import ProfilePicture from '../../assets/images/profile/profile-picture.png'

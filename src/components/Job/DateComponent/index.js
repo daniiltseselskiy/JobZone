@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Label, Input } from 'reactstrap'
+import { Label } from 'reactstrap'
 import './index.css'
 import BackArrow from '../../../assets/images/job/back-arrow.png'
 import NextArrow from '../../../assets/images/job/next-arrow.png'

@@ -5,7 +5,6 @@ import BackgroundImage from '../../assets/images/authcontainer/auth-image-1.png'
 import FirstStep from './FirstStep'
 import SecondStep from './SecondStep'
 import ThirdStep from './ThirdStep'
-import FourthStep from './FourthStep'
 import VerificationInProgress from './VerificationInProgress'
 
 class SingUp extends Component {

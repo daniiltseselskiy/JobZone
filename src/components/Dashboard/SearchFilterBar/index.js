@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
-// import DropdownMenuComponent from '../DropdownMenuComponent'
 import DropdownMenuComponent from 'react-dropdown'
-import { Input } from 'reactstrap'
 import 'react-dropdown/style.css'
 import './index.css'
 class SearchFilterBar extends Component {

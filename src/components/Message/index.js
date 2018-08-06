@@ -6,7 +6,6 @@ import MessagePanel from './MessagePanel'
 import CandidateList from './CandidateList'
 import './index.css'
 import BackButton from '../../assets/images/message/back-button.png'
-import Item from '../../../node_modules/antd/lib/list/Item';
 const jobList = [
     {
         "id": 5,

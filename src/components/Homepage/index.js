@@ -12,7 +12,6 @@ import ScanJobImage from '../../assets/images/homepage/scan-job-image.png';
 import ScheduleJobImage from '../../assets/images/homepage/schedule-job-image.png';
 import WebsiteCircleImage from '../../assets/images/homepage/website-circle.png';
 import FindJobButton from '../../assets/images/homepage/find-job-button.png';
-import PostJobButton from '../../assets/images/homepage/post-job-button.png';
 
 class Homepage extends Component {
     render () {

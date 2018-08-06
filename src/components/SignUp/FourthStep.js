@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import { Container, Col, Form, FormGroup, Row, Input, Label } from 'reactstrap'
+import { Container } from 'reactstrap'
 import PinBox from 'react-pin-input'
 import BackButton from '../../assets/images/authcontainer/back-button.png'
 import ConfirmButton from '../../assets/images/authcontainer/confirm-button.png'

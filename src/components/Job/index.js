@@ -1,7 +1,4 @@
 import React, { Component } from 'react'
-import { Container, Label } from 'reactstrap'
-import SideBar from '../SideBar'
-import JobCard from './Card'
 import DashboardContainer from '../DashboardContainer'
 import './index.css'
 import JobDetail from './JobDetail'

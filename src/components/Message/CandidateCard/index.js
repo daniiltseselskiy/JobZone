@@ -1,5 +1,5 @@
 import React , { Component } from 'react'
-import { Label, Input } from 'reactstrap'
+import { Label } from 'reactstrap'
 import './index.css'
 
 import OvalImage from '../../../assets/images/message/oval1.png'
