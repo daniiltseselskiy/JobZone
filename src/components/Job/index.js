@@ -1,6 +1,9 @@
 import React, { Component } from 'react'
 import DashboardContainer from '../DashboardContainer'
 import './index.css'
+import {
+    Label
+} from 'reactstrap'
 import JobDetail from './JobDetail'
 import MarkOpenJob from '../../assets/images/job/mark-open-job.png'
 import MarkDraft from '../../assets/images/job/mark-draft.png'
